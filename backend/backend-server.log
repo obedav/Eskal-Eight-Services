@@ -1,0 +1,1749 @@
+[Mon Oct 20 17:18:42 2025] PHP 8.2.12 Development Server (http://localhost:8000) started
+[Mon Oct 20 17:18:54 2025] [::1]:50327 Accepted
+[Mon Oct 20 17:18:55 2025] [::1]:50327 [200]: GET /api/health
+[Mon Oct 20 17:18:55 2025] [::1]:50327 Closing
+[Mon Oct 20 17:19:20 2025] [::1]:64388 Accepted
+[Mon Oct 20 17:19:20 2025] [::1]:64388 [401]: POST /api/auth/login
+[Mon Oct 20 17:19:20 2025] [::1]:64388 Closing
+[Mon Oct 20 17:19:30 2025] [::1]:63312 Accepted
+[Mon Oct 20 17:19:30 2025] [::1]:63312 [401]: GET /api/users
+[Mon Oct 20 17:19:30 2025] [::1]:63312 Closing
+[Mon Oct 20 17:20:27 2025] [::1]:52366 Accepted
+[Mon Oct 20 17:20:28 2025] [::1]:52366 [200]: POST /api/auth/login
+[Mon Oct 20 17:20:28 2025] [::1]:52366 Closing
+[Mon Oct 20 17:20:32 2025] [::1]:57705 Accepted
+[Mon Oct 20 17:20:32 2025] [::1]:57705 [401]: GET /api/quotes?status=
+[Mon Oct 20 17:20:32 2025] [::1]:57705 Closing
+[Mon Oct 20 17:20:32 2025] [::1]:49262 Accepted
+[Mon Oct 20 17:20:32 2025] [::1]:49262 [401]: GET /api/quotes?status=
+[Mon Oct 20 17:20:32 2025] [::1]:49262 Closing
+[Mon Oct 20 17:24:14 2025] [::1]:63997 Accepted
+[Mon Oct 20 17:24:14 2025] [::1]:63997 [200]: POST /api/auth/login
+[Mon Oct 20 17:24:14 2025] [::1]:63997 Closing
+[Mon Oct 20 17:24:17 2025] [::1]:62454 Accepted
+[Mon Oct 20 17:24:17 2025] [::1]:62454 [200]: OPTIONS /api/projects?page=1&limit=20
+[Mon Oct 20 17:24:17 2025] [::1]:62454 Closing
+[Mon Oct 20 17:24:17 2025] [::1]:59789 Accepted
+[Mon Oct 20 17:24:17 2025] [::1]:59789 [200]: OPTIONS /api/projects?page=1&limit=20
+[Mon Oct 20 17:24:17 2025] [::1]:59789 Closing
+[Mon Oct 20 17:24:17 2025] [::1]:52504 Accepted
+[Mon Oct 20 17:24:17 2025] PHP Fatal error:  Uncaught Error: Class "App\Models\Project" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\ProjectController.php:18
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\projects.php(27): App\Controllers\ProjectController->__construct()
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\ProjectController.php on line 18
+[Mon Oct 20 17:24:17 2025] [::1]:52504 [500]: GET /api/projects?page=1&limit=20 - Uncaught Error: Class "App\Models\Project" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\ProjectController.php:18
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\projects.php(27): App\Controllers\ProjectController->__construct()
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\ProjectController.php on line 18
+[Mon Oct 20 17:24:17 2025] [::1]:52504 Closing
+[Mon Oct 20 17:24:17 2025] [::1]:53886 Accepted
+[Mon Oct 20 17:24:17 2025] PHP Fatal error:  Uncaught Error: Class "App\Models\Project" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\ProjectController.php:18
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\projects.php(27): App\Controllers\ProjectController->__construct()
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\ProjectController.php on line 18
+[Mon Oct 20 17:24:17 2025] [::1]:53886 [500]: GET /api/projects?page=1&limit=20 - Uncaught Error: Class "App\Models\Project" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\ProjectController.php:18
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\projects.php(27): App\Controllers\ProjectController->__construct()
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\ProjectController.php on line 18
+[Mon Oct 20 17:24:17 2025] [::1]:53886 Closing
+[Mon Oct 20 17:24:25 2025] [::1]:58169 Accepted
+[Mon Oct 20 17:24:26 2025] [::1]:58169 [200]: OPTIONS /api/users?role=client&page=1&limit=50
+[Mon Oct 20 17:24:26 2025] [::1]:58169 Closing
+[Mon Oct 20 17:24:26 2025] [::1]:55413 Accepted
+[Mon Oct 20 17:24:26 2025] [::1]:55413 [200]: OPTIONS /api/users?role=client&page=1&limit=50
+[Mon Oct 20 17:24:26 2025] [::1]:55413 Closing
+[Mon Oct 20 17:24:26 2025] [::1]:54496 Accepted
+[Mon Oct 20 17:24:26 2025] PHP Fatal error:  Uncaught Error: Call to undefined method App\Models\User::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\UserController.php:34
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\users.php(22): App\Controllers\UserController->getAll()
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\UserController.php on line 34
+[Mon Oct 20 17:24:26 2025] [::1]:54496 [500]: GET /api/users?role=client&page=1&limit=50 - Uncaught Error: Call to undefined method App\Models\User::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\UserController.php:34
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\users.php(22): App\Controllers\UserController->getAll()
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\UserController.php on line 34
+[Mon Oct 20 17:24:26 2025] [::1]:54496 Closing
+[Mon Oct 20 17:24:26 2025] [::1]:64164 Accepted
+[Mon Oct 20 17:24:26 2025] PHP Fatal error:  Uncaught Error: Call to undefined method App\Models\User::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\UserController.php:34
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\users.php(22): App\Controllers\UserController->getAll()
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\UserController.php on line 34
+[Mon Oct 20 17:24:26 2025] [::1]:64164 [500]: GET /api/users?role=client&page=1&limit=50 - Uncaught Error: Call to undefined method App\Models\User::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\UserController.php:34
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\users.php(22): App\Controllers\UserController->getAll()
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\UserController.php on line 34
+[Mon Oct 20 17:24:26 2025] [::1]:64164 Closing
+[Mon Oct 20 17:24:27 2025] [::1]:57911 Accepted
+[Mon Oct 20 17:24:27 2025] [::1]:57911 [200]: OPTIONS /api/quotes?status=
+[Mon Oct 20 17:24:27 2025] [::1]:57911 Closing
+[Mon Oct 20 17:24:27 2025] [::1]:57059 Accepted
+[Mon Oct 20 17:24:27 2025] [::1]:57059 [200]: OPTIONS /api/quotes?status=
+[Mon Oct 20 17:24:27 2025] [::1]:57059 Closing
+[Mon Oct 20 17:24:27 2025] [::1]:50083 Accepted
+[Mon Oct 20 17:24:28 2025] [::1]:50083 [200]: GET /api/quotes?status=
+[Mon Oct 20 17:24:28 2025] [::1]:50083 Closing
+[Mon Oct 20 17:24:28 2025] [::1]:64750 Accepted
+[Mon Oct 20 17:24:28 2025] [::1]:64750 [200]: GET /api/quotes?status=
+[Mon Oct 20 17:24:28 2025] [::1]:64750 Closing
+[Mon Oct 20 17:25:20 2025] [::1]:64595 Accepted
+[Mon Oct 20 17:25:20 2025] [::1]:64595 [200]: OPTIONS /api/auth/verify
+[Mon Oct 20 17:25:20 2025] [::1]:64595 Closing
+[Mon Oct 20 17:25:20 2025] [::1]:61509 Accepted
+[Mon Oct 20 17:25:20 2025] [::1]:61509 [200]: OPTIONS /api/auth/verify
+[Mon Oct 20 17:25:20 2025] [::1]:61509 Closing
+[Mon Oct 20 17:25:20 2025] [::1]:49566 Accepted
+[Mon Oct 20 17:25:20 2025] [::1]:49566 [200]: GET /api/auth/verify
+[Mon Oct 20 17:25:20 2025] [::1]:49566 Closing
+[Mon Oct 20 17:25:20 2025] [::1]:65133 Accepted
+[Mon Oct 20 17:25:20 2025] [::1]:65133 [200]: GET /api/auth/verify
+[Mon Oct 20 17:25:20 2025] [::1]:65133 Closing
+[Mon Oct 20 17:25:20 2025] [::1]:60962 Accepted
+[Mon Oct 20 17:25:20 2025] [::1]:60962 [200]: GET /api/quotes?status=
+[Mon Oct 20 17:25:20 2025] [::1]:60962 Closing
+[Mon Oct 20 17:25:20 2025] [::1]:59001 Accepted
+[Mon Oct 20 17:25:20 2025] [::1]:59001 [200]: GET /api/quotes?status=
+[Mon Oct 20 17:25:20 2025] [::1]:59001 Closing
+[Mon Oct 20 17:25:26 2025] [::1]:54375 Accepted
+[Mon Oct 20 17:25:26 2025] PHP Fatal error:  Uncaught Error: Call to undefined method App\Models\User::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\UserController.php:34
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\users.php(22): App\Controllers\UserController->getAll()
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\UserController.php on line 34
+[Mon Oct 20 17:25:26 2025] [::1]:54375 [500]: GET /api/users?role=client&page=1&limit=50 - Uncaught Error: Call to undefined method App\Models\User::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\UserController.php:34
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\users.php(22): App\Controllers\UserController->getAll()
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\UserController.php on line 34
+[Mon Oct 20 17:25:26 2025] [::1]:54375 Closing
+[Mon Oct 20 17:25:26 2025] [::1]:53803 Accepted
+[Mon Oct 20 17:25:26 2025] PHP Fatal error:  Uncaught Error: Call to undefined method App\Models\User::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\UserController.php:34
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\users.php(22): App\Controllers\UserController->getAll()
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\UserController.php on line 34
+[Mon Oct 20 17:25:26 2025] [::1]:53803 [500]: GET /api/users?role=client&page=1&limit=50 - Uncaught Error: Call to undefined method App\Models\User::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\UserController.php:34
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\users.php(22): App\Controllers\UserController->getAll()
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\UserController.php on line 34
+[Mon Oct 20 17:25:26 2025] [::1]:53803 Closing
+[Mon Oct 20 17:25:31 2025] [::1]:51303 Accepted
+[Mon Oct 20 17:25:31 2025] [::1]:51303 [200]: OPTIONS /api/payments
+[Mon Oct 20 17:25:31 2025] [::1]:51303 Closing
+[Mon Oct 20 17:25:31 2025] [::1]:64813 Accepted
+[Mon Oct 20 17:25:31 2025] [::1]:64813 [200]: OPTIONS /api/payments
+[Mon Oct 20 17:25:31 2025] [::1]:64813 Closing
+[Mon Oct 20 17:25:31 2025] [::1]:63868 Accepted
+[Mon Oct 20 17:25:31 2025] PHP Fatal error:  Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 17:25:31 2025] [::1]:63868 [500]: GET /api/payments - Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 17:25:31 2025] [::1]:63868 Closing
+[Mon Oct 20 17:25:31 2025] [::1]:55798 Accepted
+[Mon Oct 20 17:25:31 2025] PHP Fatal error:  Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 17:25:31 2025] [::1]:55798 [500]: GET /api/payments - Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 17:25:31 2025] [::1]:55798 Closing
+[Mon Oct 20 17:25:33 2025] [::1]:52544 Accepted
+[Mon Oct 20 17:25:33 2025] [::1]:52544 [200]: OPTIONS /api/services
+[Mon Oct 20 17:25:33 2025] [::1]:52544 Closing
+[Mon Oct 20 17:25:33 2025] [::1]:63978 Accepted
+[Mon Oct 20 17:25:33 2025] [::1]:63978 [200]: OPTIONS /api/services
+[Mon Oct 20 17:25:33 2025] [::1]:63978 Closing
+[Mon Oct 20 17:25:33 2025] [::1]:54720 Accepted
+[Mon Oct 20 17:25:33 2025] Get Services Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'is_active' in 'where clause'
+[Mon Oct 20 17:25:33 2025] [::1]:54720 [500]: GET /api/services
+[Mon Oct 20 17:25:33 2025] [::1]:54720 Closing
+[Mon Oct 20 17:25:33 2025] [::1]:53523 Accepted
+[Mon Oct 20 17:25:33 2025] Get Services Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'is_active' in 'where clause'
+[Mon Oct 20 17:25:33 2025] [::1]:53523 [500]: GET /api/services
+[Mon Oct 20 17:25:33 2025] [::1]:53523 Closing
+[Mon Oct 20 17:25:35 2025] [::1]:53401 Accepted
+[Mon Oct 20 17:25:35 2025] [::1]:53401 [200]: OPTIONS /api/analytics/dashboard
+[Mon Oct 20 17:25:35 2025] [::1]:53401 Closing
+[Mon Oct 20 17:25:35 2025] [::1]:60391 Accepted
+[Mon Oct 20 17:25:35 2025] [::1]:60391 [200]: OPTIONS /api/analytics/dashboard
+[Mon Oct 20 17:25:35 2025] [::1]:60391 Closing
+[Mon Oct 20 17:25:35 2025] [::1]:53312 Accepted
+[Mon Oct 20 17:25:35 2025] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Models\Payment::__construct(), 0 passed in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\AnalyticsController.php on line 24 and exactly 1 expected in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php:19
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\AnalyticsController.php(24): App\Models\Payment->__construct()
+#1 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\analytics.php(20): App\Controllers\AnalyticsController->__construct()
+#2 [internal function]: App\Helpers\Router->{closure}()
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#4 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#5 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 19
+[Mon Oct 20 17:25:35 2025] [::1]:53312 [500]: GET /api/analytics/dashboard - Uncaught ArgumentCountError: Too few arguments to function App\Models\Payment::__construct(), 0 passed in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\AnalyticsController.php on line 24 and exactly 1 expected in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php:19
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\AnalyticsController.php(24): App\Models\Payment->__construct()
+#1 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\analytics.php(20): App\Controllers\AnalyticsController->__construct()
+#2 [internal function]: App\Helpers\Router->{closure}()
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#4 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#5 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 19
+[Mon Oct 20 17:25:35 2025] [::1]:53312 Closing
+[Mon Oct 20 17:25:35 2025] [::1]:63743 Accepted
+[Mon Oct 20 17:25:35 2025] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Models\Payment::__construct(), 0 passed in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\AnalyticsController.php on line 24 and exactly 1 expected in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php:19
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\AnalyticsController.php(24): App\Models\Payment->__construct()
+#1 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\analytics.php(20): App\Controllers\AnalyticsController->__construct()
+#2 [internal function]: App\Helpers\Router->{closure}()
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#4 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#5 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 19
+[Mon Oct 20 17:25:35 2025] [::1]:63743 [500]: GET /api/analytics/dashboard - Uncaught ArgumentCountError: Too few arguments to function App\Models\Payment::__construct(), 0 passed in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\AnalyticsController.php on line 24 and exactly 1 expected in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php:19
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\AnalyticsController.php(24): App\Models\Payment->__construct()
+#1 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\analytics.php(20): App\Controllers\AnalyticsController->__construct()
+#2 [internal function]: App\Helpers\Router->{closure}()
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#4 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#5 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 19
+[Mon Oct 20 17:25:35 2025] [::1]:63743 Closing
+[Mon Oct 20 17:25:42 2025] [::1]:58872 Accepted
+[Mon Oct 20 17:25:42 2025] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Models\Payment::__construct(), 0 passed in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\AnalyticsController.php on line 24 and exactly 1 expected in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php:19
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\AnalyticsController.php(24): App\Models\Payment->__construct()
+#1 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\analytics.php(20): App\Controllers\AnalyticsController->__construct()
+#2 [internal function]: App\Helpers\Router->{closure}()
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#4 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#5 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 19
+[Mon Oct 20 17:25:42 2025] [::1]:58872 [500]: GET /api/analytics/dashboard - Uncaught ArgumentCountError: Too few arguments to function App\Models\Payment::__construct(), 0 passed in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\AnalyticsController.php on line 24 and exactly 1 expected in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php:19
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\AnalyticsController.php(24): App\Models\Payment->__construct()
+#1 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\analytics.php(20): App\Controllers\AnalyticsController->__construct()
+#2 [internal function]: App\Helpers\Router->{closure}()
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#4 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#5 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 19
+[Mon Oct 20 17:25:42 2025] [::1]:58872 Closing
+[Mon Oct 20 17:25:42 2025] [::1]:60925 Accepted
+[Mon Oct 20 17:25:42 2025] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Models\Payment::__construct(), 0 passed in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\AnalyticsController.php on line 24 and exactly 1 expected in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php:19
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\AnalyticsController.php(24): App\Models\Payment->__construct()
+#1 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\analytics.php(20): App\Controllers\AnalyticsController->__construct()
+#2 [internal function]: App\Helpers\Router->{closure}()
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#4 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#5 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 19
+[Mon Oct 20 17:25:42 2025] [::1]:60925 [500]: GET /api/analytics/dashboard - Uncaught ArgumentCountError: Too few arguments to function App\Models\Payment::__construct(), 0 passed in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\AnalyticsController.php on line 24 and exactly 1 expected in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php:19
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\AnalyticsController.php(24): App\Models\Payment->__construct()
+#1 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\analytics.php(20): App\Controllers\AnalyticsController->__construct()
+#2 [internal function]: App\Helpers\Router->{closure}()
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#4 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#5 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 19
+[Mon Oct 20 17:25:42 2025] [::1]:60925 Closing
+[Mon Oct 20 17:25:44 2025] [::1]:60391 Accepted
+[Mon Oct 20 17:25:44 2025] PHP Fatal error:  Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 17:25:44 2025] [::1]:60391 [500]: GET /api/payments - Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 17:25:44 2025] [::1]:60391 Closing
+[Mon Oct 20 17:25:44 2025] [::1]:63356 Accepted
+[Mon Oct 20 17:25:44 2025] PHP Fatal error:  Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 17:25:44 2025] [::1]:63356 [500]: GET /api/payments - Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 17:25:44 2025] [::1]:63356 Closing
+[Mon Oct 20 17:25:50 2025] [::1]:58295 Accepted
+[Mon Oct 20 17:25:50 2025] [::1]:58295 [200]: GET /api/quotes?status=
+[Mon Oct 20 17:25:50 2025] [::1]:58295 Closing
+[Mon Oct 20 17:25:50 2025] [::1]:55383 Accepted
+[Mon Oct 20 17:25:51 2025] [::1]:55383 [200]: GET /api/quotes?status=
+[Mon Oct 20 17:25:51 2025] [::1]:55383 Closing
+[Mon Oct 20 17:26:09 2025] [::1]:49807 Accepted
+[Mon Oct 20 17:26:09 2025] [::1]:49807 [200]: GET /api/quotes?status=
+[Mon Oct 20 17:26:09 2025] [::1]:49807 Closing
+[Mon Oct 20 17:27:08 2025] [::1]:62963 Accepted
+[Mon Oct 20 17:27:08 2025] [::1]:62963 [200]: GET /api/quotes?status=
+[Mon Oct 20 17:27:08 2025] [::1]:62963 Closing
+[Mon Oct 20 17:27:21 2025] [::1]:56828 Accepted
+[Mon Oct 20 17:27:21 2025] PHP Fatal error:  Uncaught Error: Call to undefined method App\Models\User::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\UserController.php:34
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\users.php(22): App\Controllers\UserController->getAll()
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\UserController.php on line 34
+[Mon Oct 20 17:27:21 2025] [::1]:56828 [500]: GET /api/users?role=client&page=1&limit=50 - Uncaught Error: Call to undefined method App\Models\User::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\UserController.php:34
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\users.php(22): App\Controllers\UserController->getAll()
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\UserController.php on line 34
+[Mon Oct 20 17:27:21 2025] [::1]:56828 Closing
+[Mon Oct 20 17:27:21 2025] [::1]:51103 Accepted
+[Mon Oct 20 17:27:21 2025] PHP Fatal error:  Uncaught Error: Call to undefined method App\Models\User::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\UserController.php:34
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\users.php(22): App\Controllers\UserController->getAll()
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\UserController.php on line 34
+[Mon Oct 20 17:27:21 2025] [::1]:51103 [500]: GET /api/users?role=client&page=1&limit=50 - Uncaught Error: Call to undefined method App\Models\User::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\UserController.php:34
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\users.php(22): App\Controllers\UserController->getAll()
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\UserController.php on line 34
+[Mon Oct 20 17:27:21 2025] [::1]:51103 Closing
+[Mon Oct 20 17:30:19 2025] [::1]:63939 Accepted
+[Mon Oct 20 17:30:20 2025] [::1]:63939 [200]: GET /api/quotes?status=
+[Mon Oct 20 17:30:20 2025] [::1]:63939 Closing
+[Mon Oct 20 17:30:20 2025] [::1]:59699 Accepted
+[Mon Oct 20 17:30:20 2025] [::1]:59699 [200]: GET /api/quotes?status=
+[Mon Oct 20 17:30:20 2025] [::1]:59699 Closing
+[Mon Oct 20 17:32:47 2025] [::1]:56188 Accepted
+[Mon Oct 20 17:32:47 2025] PHP Fatal error:  Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 17:32:47 2025] [::1]:56188 [500]: GET /api/payments - Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 17:32:47 2025] [::1]:56188 Closing
+[Mon Oct 20 17:32:47 2025] [::1]:51926 Accepted
+[Mon Oct 20 17:32:47 2025] PHP Fatal error:  Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 17:32:47 2025] [::1]:51926 [500]: GET /api/payments - Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 17:32:47 2025] [::1]:51926 Closing
+[Mon Oct 20 17:32:50 2025] [::1]:60507 Accepted
+[Mon Oct 20 17:32:50 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 17:32:50 2025] [::1]:60507 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 17:32:50 2025] [::1]:60507 Closing
+[Mon Oct 20 17:32:50 2025] [::1]:49246 Accepted
+[Mon Oct 20 17:32:50 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 17:32:50 2025] [::1]:49246 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 17:32:50 2025] [::1]:49246 Closing
+[Mon Oct 20 17:32:52 2025] [::1]:52862 Accepted
+[Mon Oct 20 17:32:52 2025] PHP Fatal error:  Declaration of App\Models\User::count(string $role = '', string $status = '', string $search = ''): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\User.php on line 236
+[Mon Oct 20 17:32:52 2025] [::1]:52862 [500]: GET /api/users?role=client&page=1&limit=50 - Declaration of App\Models\User::count(string $role = '', string $status = '', string $search = ''): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\User.php on line 236
+[Mon Oct 20 17:32:52 2025] [::1]:52862 Closing
+[Mon Oct 20 17:32:52 2025] [::1]:52738 Accepted
+[Mon Oct 20 17:32:52 2025] PHP Fatal error:  Declaration of App\Models\User::count(string $role = '', string $status = '', string $search = ''): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\User.php on line 236
+[Mon Oct 20 17:32:52 2025] [::1]:52738 [500]: GET /api/users?role=client&page=1&limit=50 - Declaration of App\Models\User::count(string $role = '', string $status = '', string $search = ''): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\User.php on line 236
+[Mon Oct 20 17:32:52 2025] [::1]:52738 Closing
+[Mon Oct 20 17:32:54 2025] [::1]:54823 Accepted
+[Mon Oct 20 17:32:54 2025] Get Services Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'is_active' in 'where clause'
+[Mon Oct 20 17:32:54 2025] [::1]:54823 [500]: GET /api/services
+[Mon Oct 20 17:32:54 2025] [::1]:54823 Closing
+[Mon Oct 20 17:32:54 2025] [::1]:59680 Accepted
+[Mon Oct 20 17:32:54 2025] Get Services Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'is_active' in 'where clause'
+[Mon Oct 20 17:32:54 2025] [::1]:59680 [500]: GET /api/services
+[Mon Oct 20 17:32:54 2025] [::1]:59680 Closing
+[Mon Oct 20 17:32:56 2025] [::1]:58283 Accepted
+[Mon Oct 20 17:32:56 2025] PHP Fatal error:  Cannot redeclare App\Models\Quote::getStatistics() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Quote.php on line 322
+[Mon Oct 20 17:32:56 2025] [::1]:58283 [500]: GET /api/analytics/dashboard - Cannot redeclare App\Models\Quote::getStatistics() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Quote.php on line 322
+[Mon Oct 20 17:32:56 2025] [::1]:58283 Closing
+[Mon Oct 20 17:32:56 2025] [::1]:57668 Accepted
+[Mon Oct 20 17:32:56 2025] PHP Fatal error:  Cannot redeclare App\Models\Quote::getStatistics() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Quote.php on line 322
+[Mon Oct 20 17:32:56 2025] [::1]:57668 [500]: GET /api/analytics/dashboard - Cannot redeclare App\Models\Quote::getStatistics() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Quote.php on line 322
+[Mon Oct 20 17:32:56 2025] [::1]:57668 Closing
+[Mon Oct 20 17:36:20 2025] [::1]:51143 Accepted
+[Mon Oct 20 17:36:20 2025] PHP Fatal error:  Cannot redeclare App\Models\Quote::getStatistics() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Quote.php on line 322
+[Mon Oct 20 17:36:20 2025] [::1]:51143 [500]: GET /api/quotes?status= - Cannot redeclare App\Models\Quote::getStatistics() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Quote.php on line 322
+[Mon Oct 20 17:36:20 2025] [::1]:51143 Closing
+[Mon Oct 20 17:36:20 2025] [::1]:61540 Accepted
+[Mon Oct 20 17:36:20 2025] PHP Fatal error:  Cannot redeclare App\Models\Quote::getStatistics() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Quote.php on line 322
+[Mon Oct 20 17:36:20 2025] [::1]:61540 [500]: GET /api/quotes?status= - Cannot redeclare App\Models\Quote::getStatistics() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Quote.php on line 322
+[Mon Oct 20 17:36:20 2025] [::1]:61540 Closing
+[Mon Oct 20 17:36:23 2025] [::1]:60712 Accepted
+[Mon Oct 20 17:36:23 2025] [::1]:57283 Accepted
+[Mon Oct 20 17:36:23 2025] [::1]:60712 [200]: OPTIONS /api/quotes?limit=5
+[Mon Oct 20 17:36:23 2025] [::1]:60712 Closing
+[Mon Oct 20 17:36:23 2025] [::1]:57283 [200]: OPTIONS /api/quotes?limit=5
+[Mon Oct 20 17:36:23 2025] [::1]:57283 Closing
+[Mon Oct 20 17:36:23 2025] [::1]:54042 Accepted
+[Mon Oct 20 17:36:23 2025] PHP Fatal error:  Cannot redeclare App\Models\Quote::getStatistics() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Quote.php on line 322
+[Mon Oct 20 17:36:23 2025] [::1]:54042 [500]: GET /api/quotes?limit=5 - Cannot redeclare App\Models\Quote::getStatistics() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Quote.php on line 322
+[Mon Oct 20 17:36:23 2025] [::1]:54042 Closing
+[Mon Oct 20 17:36:23 2025] [::1]:57725 Accepted
+[Mon Oct 20 17:36:24 2025] PHP Fatal error:  Cannot redeclare App\Models\Quote::getStatistics() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Quote.php on line 322
+[Mon Oct 20 17:36:24 2025] [::1]:57725 [500]: GET /api/quotes?limit=5 - Cannot redeclare App\Models\Quote::getStatistics() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Quote.php on line 322
+[Mon Oct 20 17:36:24 2025] [::1]:57725 Closing
+[Mon Oct 20 17:36:37 2025] [::1]:52032 Accepted
+[Mon Oct 20 17:36:37 2025] PHP Fatal error:  Declaration of App\Models\User::count(string $role = '', string $status = '', string $search = ''): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\User.php on line 236
+[Mon Oct 20 17:36:37 2025] [::1]:52032 [500]: GET /api/users?role=client&page=1&limit=50 - Declaration of App\Models\User::count(string $role = '', string $status = '', string $search = ''): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\User.php on line 236
+[Mon Oct 20 17:36:37 2025] [::1]:52032 Closing
+[Mon Oct 20 17:36:37 2025] [::1]:52296 Accepted
+[Mon Oct 20 17:36:37 2025] PHP Fatal error:  Declaration of App\Models\User::count(string $role = '', string $status = '', string $search = ''): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\User.php on line 236
+[Mon Oct 20 17:36:37 2025] [::1]:52296 [500]: GET /api/users?role=client&page=1&limit=50 - Declaration of App\Models\User::count(string $role = '', string $status = '', string $search = ''): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\User.php on line 236
+[Mon Oct 20 17:36:37 2025] [::1]:52296 Closing
+[Mon Oct 20 17:36:46 2025] [::1]:61678 Accepted
+[Mon Oct 20 17:36:46 2025] PHP Fatal error:  Cannot redeclare App\Models\Quote::getStatistics() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Quote.php on line 322
+[Mon Oct 20 17:36:46 2025] [::1]:61678 [500]: GET /api/quotes?limit=5 - Cannot redeclare App\Models\Quote::getStatistics() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Quote.php on line 322
+[Mon Oct 20 17:36:46 2025] [::1]:61678 Closing
+[Mon Oct 20 17:36:46 2025] [::1]:56731 Accepted
+[Mon Oct 20 17:36:46 2025] PHP Fatal error:  Cannot redeclare App\Models\Quote::getStatistics() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Quote.php on line 322
+[Mon Oct 20 17:36:46 2025] [::1]:56731 [500]: GET /api/quotes?limit=5 - Cannot redeclare App\Models\Quote::getStatistics() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Quote.php on line 322
+[Mon Oct 20 17:36:46 2025] [::1]:56731 Closing
+[Mon Oct 20 17:36:50 2025] [::1]:62713 Accepted
+[Mon Oct 20 17:36:50 2025] [::1]:62713 [200]: OPTIONS /api/auth/verify
+[Mon Oct 20 17:36:50 2025] [::1]:62713 Closing
+[Mon Oct 20 17:36:50 2025] [::1]:52358 Accepted
+[Mon Oct 20 17:36:50 2025] [::1]:52358 [200]: OPTIONS /api/auth/verify
+[Mon Oct 20 17:36:50 2025] [::1]:52358 Closing
+[Mon Oct 20 17:36:50 2025] [::1]:57805 Accepted
+[Mon Oct 20 17:36:50 2025] PHP Fatal error:  Declaration of App\Models\User::count(string $role = '', string $status = '', string $search = ''): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\User.php on line 236
+[Mon Oct 20 17:36:50 2025] [::1]:57805 [500]: GET /api/auth/verify - Declaration of App\Models\User::count(string $role = '', string $status = '', string $search = ''): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\User.php on line 236
+[Mon Oct 20 17:36:50 2025] [::1]:57805 Closing
+[Mon Oct 20 17:36:50 2025] [::1]:58184 Accepted
+[Mon Oct 20 17:36:50 2025] PHP Fatal error:  Declaration of App\Models\User::count(string $role = '', string $status = '', string $search = ''): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\User.php on line 236
+[Mon Oct 20 17:36:50 2025] [::1]:58184 [500]: GET /api/auth/verify - Declaration of App\Models\User::count(string $role = '', string $status = '', string $search = ''): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\User.php on line 236
+[Mon Oct 20 17:36:50 2025] [::1]:58184 Closing
+[Mon Oct 20 17:36:50 2025] [::1]:57619 Accepted
+[Mon Oct 20 17:36:50 2025] PHP Fatal error:  Cannot redeclare App\Models\Quote::getStatistics() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Quote.php on line 322
+[Mon Oct 20 17:36:50 2025] [::1]:57619 [500]: GET /api/quotes?limit=5 - Cannot redeclare App\Models\Quote::getStatistics() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Quote.php on line 322
+[Mon Oct 20 17:36:50 2025] [::1]:57619 Closing
+[Mon Oct 20 17:36:50 2025] [::1]:63925 Accepted
+[Mon Oct 20 17:36:50 2025] PHP Fatal error:  Cannot redeclare App\Models\Quote::getStatistics() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Quote.php on line 322
+[Mon Oct 20 17:36:50 2025] [::1]:63925 [500]: GET /api/quotes?limit=5 - Cannot redeclare App\Models\Quote::getStatistics() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Quote.php on line 322
+[Mon Oct 20 17:36:50 2025] [::1]:63925 Closing
+[Mon Oct 20 17:37:03 2025] [::1]:54343 Accepted
+[Mon Oct 20 17:37:03 2025] [::1]:54343 [200]: OPTIONS /api/auth/verify
+[Mon Oct 20 17:37:03 2025] [::1]:54343 Closing
+[Mon Oct 20 17:37:03 2025] [::1]:50060 Accepted
+[Mon Oct 20 17:37:03 2025] [::1]:50060 [200]: OPTIONS /api/auth/verify
+[Mon Oct 20 17:37:03 2025] [::1]:50060 Closing
+[Mon Oct 20 17:37:03 2025] [::1]:63451 Accepted
+[Mon Oct 20 17:37:03 2025] PHP Fatal error:  Declaration of App\Models\User::count(string $role = '', string $status = '', string $search = ''): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\User.php on line 236
+[Mon Oct 20 17:37:03 2025] [::1]:63451 [500]: GET /api/auth/verify - Declaration of App\Models\User::count(string $role = '', string $status = '', string $search = ''): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\User.php on line 236
+[Mon Oct 20 17:37:03 2025] [::1]:63451 Closing
+[Mon Oct 20 17:37:03 2025] [::1]:61931 Accepted
+[Mon Oct 20 17:37:03 2025] PHP Fatal error:  Declaration of App\Models\User::count(string $role = '', string $status = '', string $search = ''): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\User.php on line 236
+[Mon Oct 20 17:37:03 2025] [::1]:61931 [500]: GET /api/auth/verify - Declaration of App\Models\User::count(string $role = '', string $status = '', string $search = ''): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\User.php on line 236
+[Mon Oct 20 17:37:03 2025] [::1]:61931 Closing
+[Mon Oct 20 17:37:03 2025] [::1]:58438 Accepted
+[Mon Oct 20 17:37:03 2025] PHP Fatal error:  Cannot redeclare App\Models\Quote::getStatistics() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Quote.php on line 322
+[Mon Oct 20 17:37:03 2025] [::1]:58438 [500]: GET /api/quotes?limit=5 - Cannot redeclare App\Models\Quote::getStatistics() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Quote.php on line 322
+[Mon Oct 20 17:37:03 2025] [::1]:58438 Closing
+[Mon Oct 20 17:37:03 2025] [::1]:60989 Accepted
+[Mon Oct 20 17:37:03 2025] PHP Fatal error:  Cannot redeclare App\Models\Quote::getStatistics() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Quote.php on line 322
+[Mon Oct 20 17:37:03 2025] [::1]:60989 [500]: GET /api/quotes?limit=5 - Cannot redeclare App\Models\Quote::getStatistics() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Quote.php on line 322
+[Mon Oct 20 17:37:03 2025] [::1]:60989 Closing
+[Mon Oct 20 17:37:35 2025] [::1]:59376 Accepted
+[Mon Oct 20 17:37:35 2025] [::1]:59376 [200]: OPTIONS /api/auth/login
+[Mon Oct 20 17:37:35 2025] [::1]:59376 Closing
+[Mon Oct 20 17:37:35 2025] [::1]:64260 Accepted
+[Mon Oct 20 17:37:35 2025] PHP Fatal error:  Declaration of App\Models\User::count(string $role = '', string $status = '', string $search = ''): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\User.php on line 236
+[Mon Oct 20 17:37:35 2025] [::1]:64260 [500]: POST /api/auth/login - Declaration of App\Models\User::count(string $role = '', string $status = '', string $search = ''): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\User.php on line 236
+[Mon Oct 20 17:37:35 2025] [::1]:64260 Closing
+[Mon Oct 20 17:37:51 2025] [::1]:60253 Accepted
+[Mon Oct 20 17:37:51 2025] PHP Fatal error:  Declaration of App\Models\User::count(string $role = '', string $status = '', string $search = ''): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\User.php on line 236
+[Mon Oct 20 17:37:51 2025] [::1]:60253 [500]: POST /api/auth/login - Declaration of App\Models\User::count(string $role = '', string $status = '', string $search = ''): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\User.php on line 236
+[Mon Oct 20 17:37:51 2025] [::1]:60253 Closing
+[Mon Oct 20 17:40:18 2025] [::1]:49651 Accepted
+[Mon Oct 20 17:40:18 2025] [::1]:49651 [200]: OPTIONS /api/auth/login
+[Mon Oct 20 17:40:18 2025] [::1]:49651 Closing
+[Mon Oct 20 17:40:18 2025] [::1]:53281 Accepted
+[Mon Oct 20 17:40:18 2025] [::1]:53281 [200]: POST /api/auth/login
+[Mon Oct 20 17:40:18 2025] [::1]:53281 Closing
+[Mon Oct 20 17:40:18 2025] [::1]:63816 Accepted
+[Mon Oct 20 17:40:18 2025] [::1]:55124 Accepted
+[Mon Oct 20 17:40:18 2025] [::1]:63816 [200]: OPTIONS /api/quotes?limit=5
+[Mon Oct 20 17:40:18 2025] [::1]:63816 Closing
+[Mon Oct 20 17:40:19 2025] [::1]:55124 [200]: OPTIONS /api/quotes?limit=5
+[Mon Oct 20 17:40:19 2025] [::1]:55124 Closing
+[Mon Oct 20 17:40:19 2025] [::1]:51352 Accepted
+[Mon Oct 20 17:40:19 2025] [::1]:51352 [200]: GET /api/quotes?limit=5
+[Mon Oct 20 17:40:19 2025] [::1]:51352 Closing
+[Mon Oct 20 17:40:19 2025] [::1]:50649 Accepted
+[Mon Oct 20 17:40:19 2025] [::1]:50649 [200]: GET /api/quotes?limit=5
+[Mon Oct 20 17:40:19 2025] [::1]:50649 Closing
+[Mon Oct 20 17:41:01 2025] [::1]:52491 Accepted
+[Mon Oct 20 17:41:01 2025] [::1]:52491 [200]: GET /api/quotes?status=
+[Mon Oct 20 17:41:01 2025] [::1]:52491 Closing
+[Mon Oct 20 17:41:01 2025] [::1]:60139 Accepted
+[Mon Oct 20 17:41:01 2025] [::1]:60139 [200]: GET /api/quotes?status=
+[Mon Oct 20 17:41:01 2025] [::1]:60139 Closing
+[Mon Oct 20 17:41:02 2025] [::1]:57236 Accepted
+[Mon Oct 20 17:41:02 2025] [::1]:57236 [200]: GET /api/users?role=client&page=1&limit=50
+[Mon Oct 20 17:41:02 2025] [::1]:57236 Closing
+[Mon Oct 20 17:41:02 2025] [::1]:55078 Accepted
+[Mon Oct 20 17:41:03 2025] [::1]:55078 [200]: GET /api/users?role=client&page=1&limit=50
+[Mon Oct 20 17:41:03 2025] [::1]:55078 Closing
+[Mon Oct 20 17:41:04 2025] [::1]:60519 Accepted
+[Mon Oct 20 17:41:04 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 17:41:04 2025] [::1]:60519 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 17:41:04 2025] [::1]:60519 Closing
+[Mon Oct 20 17:41:04 2025] [::1]:50605 Accepted
+[Mon Oct 20 17:41:04 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 17:41:04 2025] [::1]:50605 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 17:41:04 2025] [::1]:50605 Closing
+[Mon Oct 20 17:41:05 2025] [::1]:52357 Accepted
+[Mon Oct 20 17:41:05 2025] [::1]:52357 [200]: GET /api/users?role=client&page=1&limit=50
+[Mon Oct 20 17:41:05 2025] [::1]:52357 Closing
+[Mon Oct 20 17:41:05 2025] [::1]:50271 Accepted
+[Mon Oct 20 17:41:05 2025] [::1]:50271 [200]: GET /api/users?role=client&page=1&limit=50
+[Mon Oct 20 17:41:05 2025] [::1]:50271 Closing
+[Mon Oct 20 17:45:27 2025] [::1]:63768 Accepted
+[Mon Oct 20 17:45:27 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 17:45:27 2025] [::1]:63768 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 17:45:27 2025] [::1]:63768 Closing
+[Mon Oct 20 17:45:27 2025] [::1]:49336 Accepted
+[Mon Oct 20 17:45:27 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 17:45:27 2025] [::1]:49336 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 17:45:27 2025] [::1]:49336 Closing
+[Mon Oct 20 17:45:29 2025] [::1]:64775 Accepted
+[Mon Oct 20 17:45:29 2025] [::1]:64775 [200]: GET /api/auth/verify
+[Mon Oct 20 17:45:29 2025] [::1]:64775 Closing
+[Mon Oct 20 17:45:29 2025] [::1]:62046 Accepted
+[Mon Oct 20 17:45:29 2025] [::1]:62046 [200]: GET /api/auth/verify
+[Mon Oct 20 17:45:29 2025] [::1]:62046 Closing
+[Mon Oct 20 17:45:29 2025] [::1]:57505 Accepted
+[Mon Oct 20 17:45:30 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 17:45:30 2025] [::1]:57505 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 17:45:30 2025] [::1]:57505 Closing
+[Mon Oct 20 17:45:30 2025] [::1]:57621 Accepted
+[Mon Oct 20 17:45:30 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 17:45:30 2025] [::1]:57621 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 17:45:30 2025] [::1]:57621 Closing
+[Mon Oct 20 17:45:32 2025] [::1]:60264 Accepted
+[Mon Oct 20 17:45:32 2025] PHP Fatal error:  Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 17:45:32 2025] [::1]:60264 [500]: GET /api/payments - Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 17:45:32 2025] [::1]:60264 Closing
+[Mon Oct 20 17:45:32 2025] [::1]:61357 Accepted
+[Mon Oct 20 17:45:32 2025] PHP Fatal error:  Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 17:45:32 2025] [::1]:61357 [500]: GET /api/payments - Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 17:45:32 2025] [::1]:61357 Closing
+[Mon Oct 20 17:45:36 2025] [::1]:61670 Accepted
+[Mon Oct 20 17:45:36 2025] Get Services Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'is_active' in 'where clause'
+[Mon Oct 20 17:45:36 2025] [::1]:61670 [500]: GET /api/services
+[Mon Oct 20 17:45:36 2025] [::1]:61670 Closing
+[Mon Oct 20 17:45:36 2025] [::1]:60465 Accepted
+[Mon Oct 20 17:45:36 2025] Get Services Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'is_active' in 'where clause'
+[Mon Oct 20 17:45:36 2025] [::1]:60465 [500]: GET /api/services
+[Mon Oct 20 17:45:36 2025] [::1]:60465 Closing
+[Mon Oct 20 17:57:42 2025] [::1]:61843 Accepted
+[Mon Oct 20 17:57:42 2025] PHP Fatal error:  Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 404
+[Mon Oct 20 17:57:42 2025] [::1]:61843 [500]: GET /api/analytics/dashboard - Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 404
+[Mon Oct 20 17:57:42 2025] [::1]:61843 Closing
+[Mon Oct 20 17:57:42 2025] [::1]:61016 Accepted
+[Mon Oct 20 17:57:42 2025] PHP Fatal error:  Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 404
+[Mon Oct 20 17:57:42 2025] [::1]:61016 [500]: GET /api/analytics/dashboard - Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 404
+[Mon Oct 20 17:57:42 2025] [::1]:61016 Closing
+[Mon Oct 20 18:00:37 2025] [::1]:61948 Accepted
+[Mon Oct 20 18:00:37 2025] PHP Fatal error:  Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 404
+[Mon Oct 20 18:00:37 2025] [::1]:61948 [500]: GET /api/analytics/dashboard - Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 404
+[Mon Oct 20 18:00:37 2025] [::1]:61948 Closing
+[Mon Oct 20 18:00:37 2025] [::1]:49424 Accepted
+[Mon Oct 20 18:00:37 2025] PHP Fatal error:  Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 404
+[Mon Oct 20 18:00:37 2025] [::1]:49424 [500]: GET /api/analytics/dashboard - Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 404
+[Mon Oct 20 18:00:37 2025] [::1]:49424 Closing
+[Mon Oct 20 18:03:00 2025] [::1]:62636 Accepted
+[Mon Oct 20 18:03:00 2025] PHP Fatal error:  Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 404
+[Mon Oct 20 18:03:00 2025] [::1]:62636 [500]: GET /api/analytics/dashboard - Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 404
+[Mon Oct 20 18:03:00 2025] [::1]:62636 Closing
+[Mon Oct 20 18:14:01 2025] [::1]:64946 Accepted
+[Mon Oct 20 18:14:01 2025] [::1]:64946 [200]: GET /api/quotes?status=
+[Mon Oct 20 18:14:01 2025] [::1]:64946 Closing
+[Mon Oct 20 18:14:01 2025] [::1]:53364 Accepted
+[Mon Oct 20 18:14:01 2025] [::1]:53364 [200]: GET /api/quotes?status=
+[Mon Oct 20 18:14:01 2025] [::1]:53364 Closing
+[Mon Oct 20 18:14:05 2025] [::1]:53208 Accepted
+[Mon Oct 20 18:14:05 2025] PHP Fatal error:  Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 404
+[Mon Oct 20 18:14:05 2025] [::1]:53208 [500]: GET /api/analytics/dashboard - Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 404
+[Mon Oct 20 18:14:05 2025] [::1]:53208 Closing
+[Mon Oct 20 18:14:05 2025] [::1]:63498 Accepted
+[Mon Oct 20 18:14:05 2025] PHP Fatal error:  Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 404
+[Mon Oct 20 18:14:05 2025] [::1]:63498 [500]: GET /api/analytics/dashboard - Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 404
+[Mon Oct 20 18:14:05 2025] [::1]:63498 Closing
+[Mon Oct 20 18:14:08 2025] [::1]:61406 Accepted
+[Mon Oct 20 18:14:08 2025] [::1]:61406 [200]: GET /api/quotes?status=
+[Mon Oct 20 18:14:08 2025] [::1]:61406 Closing
+[Mon Oct 20 18:14:08 2025] [::1]:58359 Accepted
+[Mon Oct 20 18:14:08 2025] [::1]:58359 [200]: GET /api/quotes?status=
+[Mon Oct 20 18:14:08 2025] [::1]:58359 Closing
+[Mon Oct 20 18:14:08 2025] [::1]:54359 Accepted
+[Mon Oct 20 18:14:08 2025] [::1]:54359 [200]: GET /api/users?role=client&page=1&limit=50
+[Mon Oct 20 18:14:08 2025] [::1]:54359 Closing
+[Mon Oct 20 18:14:08 2025] [::1]:50484 Accepted
+[Mon Oct 20 18:14:08 2025] [::1]:50484 [200]: GET /api/users?role=client&page=1&limit=50
+[Mon Oct 20 18:14:08 2025] [::1]:50484 Closing
+[Mon Oct 20 18:14:09 2025] [::1]:53931 Accepted
+[Mon Oct 20 18:14:09 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:14:09 2025] [::1]:53931 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:14:09 2025] [::1]:53931 Closing
+[Mon Oct 20 18:14:09 2025] [::1]:59760 Accepted
+[Mon Oct 20 18:14:09 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:14:09 2025] [::1]:59760 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:14:09 2025] [::1]:59760 Closing
+[Mon Oct 20 18:14:12 2025] [::1]:51715 Accepted
+[Mon Oct 20 18:14:12 2025] PHP Fatal error:  Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 18:14:12 2025] [::1]:51715 [500]: GET /api/payments - Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 18:14:12 2025] [::1]:51715 Closing
+[Mon Oct 20 18:14:12 2025] [::1]:64898 Accepted
+[Mon Oct 20 18:14:12 2025] PHP Fatal error:  Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 18:14:12 2025] [::1]:64898 [500]: GET /api/payments - Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 18:14:12 2025] [::1]:64898 Closing
+[Mon Oct 20 18:14:13 2025] [::1]:60309 Accepted
+[Mon Oct 20 18:14:13 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:14:13 2025] [::1]:60309 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:14:13 2025] [::1]:60309 Closing
+[Mon Oct 20 18:14:13 2025] [::1]:64309 Accepted
+[Mon Oct 20 18:14:13 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:14:13 2025] [::1]:64309 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:14:13 2025] [::1]:64309 Closing
+[Mon Oct 20 18:14:14 2025] [::1]:64262 Accepted
+[Mon Oct 20 18:14:14 2025] PHP Fatal error:  Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 18:14:14 2025] [::1]:64262 [500]: GET /api/payments - Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 18:14:14 2025] [::1]:64262 Closing
+[Mon Oct 20 18:14:14 2025] [::1]:56487 Accepted
+[Mon Oct 20 18:14:14 2025] PHP Fatal error:  Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 18:14:14 2025] [::1]:56487 [500]: GET /api/payments - Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 18:14:14 2025] [::1]:56487 Closing
+[Mon Oct 20 18:17:33 2025] [::1]:62026 Accepted
+[Mon Oct 20 18:17:33 2025] [::1]:62026 [200]: OPTIONS /api/payments/statistics/all
+[Mon Oct 20 18:17:33 2025] [::1]:62026 Closing
+[Mon Oct 20 18:17:33 2025] [::1]:64476 Accepted
+[Mon Oct 20 18:17:33 2025] [::1]:64476 [200]: OPTIONS /api/payments/statistics/all
+[Mon Oct 20 18:17:33 2025] [::1]:64476 Closing
+[Mon Oct 20 18:17:33 2025] [::1]:64928 Accepted
+[Mon Oct 20 18:17:33 2025] PHP Warning:  Undefined array key "user" in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44
+[Mon Oct 20 18:17:33 2025] PHP Fatal error:  Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:17:33 2025] [::1]:64928 [500]: GET /api/payments/statistics/all - Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:17:33 2025] [::1]:64928 Closing
+[Mon Oct 20 18:17:33 2025] [::1]:58776 Accepted
+[Mon Oct 20 18:17:33 2025] PHP Warning:  Undefined array key "user" in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44
+[Mon Oct 20 18:17:33 2025] PHP Fatal error:  Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:17:33 2025] [::1]:58776 [500]: GET /api/payments/statistics/all - Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:17:33 2025] [::1]:58776 Closing
+[Mon Oct 20 18:17:33 2025] [::1]:64232 Accepted
+[Mon Oct 20 18:17:33 2025] PHP Fatal error:  Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 18:17:33 2025] [::1]:64232 [500]: GET /api/payments - Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 18:17:33 2025] [::1]:64232 Closing
+[Mon Oct 20 18:17:33 2025] [::1]:53249 Accepted
+[Mon Oct 20 18:17:33 2025] PHP Fatal error:  Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 18:17:33 2025] [::1]:53249 [500]: GET /api/payments - Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 18:17:33 2025] [::1]:53249 Closing
+[Mon Oct 20 18:18:01 2025] [::1]:51319 Accepted
+[Mon Oct 20 18:18:01 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:18:01 2025] [::1]:51319 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:18:01 2025] [::1]:51319 Closing
+[Mon Oct 20 18:18:01 2025] [::1]:53508 Accepted
+[Mon Oct 20 18:18:01 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:18:01 2025] [::1]:53508 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:18:01 2025] [::1]:53508 Closing
+[Mon Oct 20 18:18:03 2025] [::1]:52794 Accepted
+[Mon Oct 20 18:18:03 2025] [::1]:52794 [200]: GET /api/users?role=client&page=1&limit=50
+[Mon Oct 20 18:18:03 2025] [::1]:52794 Closing
+[Mon Oct 20 18:18:03 2025] [::1]:53335 Accepted
+[Mon Oct 20 18:18:03 2025] [::1]:53335 [200]: GET /api/users?role=client&page=1&limit=50
+[Mon Oct 20 18:18:03 2025] [::1]:53335 Closing
+[Mon Oct 20 18:18:05 2025] [::1]:60692 Accepted
+[Mon Oct 20 18:18:05 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:18:05 2025] [::1]:60692 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:18:05 2025] [::1]:60692 Closing
+[Mon Oct 20 18:18:05 2025] [::1]:61329 Accepted
+[Mon Oct 20 18:18:05 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:18:05 2025] [::1]:61329 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:18:05 2025] [::1]:61329 Closing
+[Mon Oct 20 18:18:11 2025] [::1]:54778 Accepted
+[Mon Oct 20 18:18:11 2025] PHP Warning:  Undefined array key "user" in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44
+[Mon Oct 20 18:18:11 2025] PHP Fatal error:  Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:18:11 2025] [::1]:54778 [500]: GET /api/payments/statistics/all - Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:18:11 2025] [::1]:54778 Closing
+[Mon Oct 20 18:18:11 2025] [::1]:58189 Accepted
+[Mon Oct 20 18:18:11 2025] PHP Warning:  Undefined array key "user" in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44
+[Mon Oct 20 18:18:11 2025] PHP Fatal error:  Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:18:11 2025] [::1]:58189 [500]: GET /api/payments/statistics/all - Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:18:11 2025] [::1]:58189 Closing
+[Mon Oct 20 18:18:11 2025] [::1]:49240 Accepted
+[Mon Oct 20 18:18:11 2025] PHP Fatal error:  Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 18:18:11 2025] [::1]:49240 [500]: GET /api/payments - Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 18:18:11 2025] [::1]:49240 Closing
+[Mon Oct 20 18:18:11 2025] [::1]:52353 Accepted
+[Mon Oct 20 18:18:11 2025] PHP Fatal error:  Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 18:18:11 2025] [::1]:52353 [500]: GET /api/payments - Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 18:18:11 2025] [::1]:52353 Closing
+[Mon Oct 20 18:18:12 2025] [::1]:59187 Accepted
+[Mon Oct 20 18:18:12 2025] Get Services Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'is_active' in 'where clause'
+[Mon Oct 20 18:18:12 2025] [::1]:59187 [500]: GET /api/services
+[Mon Oct 20 18:18:12 2025] [::1]:59187 Closing
+[Mon Oct 20 18:18:12 2025] [::1]:50060 Accepted
+[Mon Oct 20 18:18:12 2025] Get Services Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'is_active' in 'where clause'
+[Mon Oct 20 18:18:12 2025] [::1]:50060 [500]: GET /api/services
+[Mon Oct 20 18:18:12 2025] [::1]:50060 Closing
+[Mon Oct 20 18:18:13 2025] [::1]:65348 Accepted
+[Mon Oct 20 18:18:13 2025] PHP Warning:  Undefined array key "user" in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44
+[Mon Oct 20 18:18:13 2025] PHP Fatal error:  Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:18:13 2025] [::1]:65348 [500]: GET /api/payments/statistics/all - Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:18:13 2025] [::1]:65348 Closing
+[Mon Oct 20 18:18:13 2025] [::1]:54335 Accepted
+[Mon Oct 20 18:18:13 2025] PHP Warning:  Undefined array key "user" in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44
+[Mon Oct 20 18:18:13 2025] PHP Fatal error:  Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:18:13 2025] [::1]:54335 [500]: GET /api/payments/statistics/all - Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:18:13 2025] [::1]:54335 Closing
+[Mon Oct 20 18:18:13 2025] [::1]:51649 Accepted
+[Mon Oct 20 18:18:13 2025] PHP Fatal error:  Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 18:18:13 2025] [::1]:51649 [500]: GET /api/payments - Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 18:18:13 2025] [::1]:51649 Closing
+[Mon Oct 20 18:18:13 2025] [::1]:59433 Accepted
+[Mon Oct 20 18:18:13 2025] PHP Fatal error:  Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 18:18:13 2025] [::1]:59433 [500]: GET /api/payments - Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 18:18:13 2025] [::1]:59433 Closing
+[Mon Oct 20 18:18:14 2025] [::1]:64771 Accepted
+[Mon Oct 20 18:18:14 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:18:14 2025] [::1]:64771 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:18:14 2025] [::1]:64771 Closing
+[Mon Oct 20 18:18:14 2025] [::1]:56184 Accepted
+[Mon Oct 20 18:18:14 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:18:14 2025] [::1]:56184 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:18:14 2025] [::1]:56184 Closing
+[Mon Oct 20 18:18:15 2025] [::1]:54284 Accepted
+[Mon Oct 20 18:18:15 2025] PHP Warning:  Undefined array key "user" in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44
+[Mon Oct 20 18:18:15 2025] PHP Fatal error:  Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:18:15 2025] [::1]:54284 [500]: GET /api/payments/statistics/all - Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:18:15 2025] [::1]:54284 Closing
+[Mon Oct 20 18:18:15 2025] [::1]:54563 Accepted
+[Mon Oct 20 18:18:15 2025] PHP Warning:  Undefined array key "user" in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44
+[Mon Oct 20 18:18:15 2025] PHP Fatal error:  Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:18:15 2025] [::1]:54563 [500]: GET /api/payments/statistics/all - Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:18:15 2025] [::1]:54563 Closing
+[Mon Oct 20 18:18:15 2025] [::1]:57302 Accepted
+[Mon Oct 20 18:18:15 2025] PHP Fatal error:  Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 18:18:15 2025] [::1]:57302 [500]: GET /api/payments - Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 18:18:15 2025] [::1]:57302 Closing
+[Mon Oct 20 18:18:15 2025] [::1]:52508 Accepted
+[Mon Oct 20 18:18:15 2025] PHP Fatal error:  Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 18:18:15 2025] [::1]:52508 [500]: GET /api/payments - Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 18:18:15 2025] [::1]:52508 Closing
+[Mon Oct 20 18:18:17 2025] [::1]:54008 Accepted
+[Mon Oct 20 18:18:17 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:18:17 2025] [::1]:54008 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:18:17 2025] [::1]:54008 Closing
+[Mon Oct 20 18:18:17 2025] [::1]:53462 Accepted
+[Mon Oct 20 18:18:17 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:18:17 2025] [::1]:53462 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:18:17 2025] [::1]:53462 Closing
+[Mon Oct 20 18:18:43 2025] [::1]:64646 Accepted
+[Mon Oct 20 18:18:44 2025] PHP Warning:  Undefined array key "user" in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44
+[Mon Oct 20 18:18:44 2025] PHP Fatal error:  Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:18:44 2025] [::1]:64646 [500]: GET /api/payments/statistics/all - Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:18:44 2025] [::1]:64646 Closing
+[Mon Oct 20 18:18:44 2025] [::1]:52370 Accepted
+[Mon Oct 20 18:18:44 2025] PHP Warning:  Undefined array key "user" in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44
+[Mon Oct 20 18:18:44 2025] PHP Fatal error:  Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:18:44 2025] [::1]:52370 [500]: GET /api/payments/statistics/all - Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:18:44 2025] [::1]:52370 Closing
+[Mon Oct 20 18:18:44 2025] [::1]:53591 Accepted
+[Mon Oct 20 18:18:44 2025] PHP Fatal error:  Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 18:18:44 2025] [::1]:53591 [500]: GET /api/payments - Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 18:18:44 2025] [::1]:53591 Closing
+[Mon Oct 20 18:18:44 2025] [::1]:54107 Accepted
+[Mon Oct 20 18:18:44 2025] PHP Fatal error:  Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 18:18:44 2025] [::1]:54107 [500]: GET /api/payments - Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 18:18:44 2025] [::1]:54107 Closing
+[Mon Oct 20 18:21:06 2025] [::1]:58546 Accepted
+[Mon Oct 20 18:21:06 2025] PHP Warning:  Undefined array key "user" in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44
+[Mon Oct 20 18:21:06 2025] PHP Fatal error:  Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:21:06 2025] [::1]:58546 [500]: GET /api/payments/statistics/all - Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:21:06 2025] [::1]:58546 Closing
+[Mon Oct 20 18:21:06 2025] [::1]:64413 Accepted
+[Mon Oct 20 18:21:06 2025] PHP Fatal error:  Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 18:21:06 2025] [::1]:64413 [500]: GET /api/payments - Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 18:21:06 2025] [::1]:64413 Closing
+[Mon Oct 20 18:21:06 2025] [::1]:50999 Accepted
+[Mon Oct 20 18:21:06 2025] PHP Fatal error:  Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 18:21:06 2025] [::1]:50999 [500]: GET /api/payments - Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 18:21:06 2025] [::1]:50999 Closing
+[Mon Oct 20 18:24:27 2025] [::1]:65297 Accepted
+[Mon Oct 20 18:24:27 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:24:27 2025] [::1]:65297 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:24:27 2025] [::1]:65297 Closing
+[Mon Oct 20 18:24:27 2025] [::1]:51233 Accepted
+[Mon Oct 20 18:24:27 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:24:27 2025] [::1]:51233 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:24:27 2025] [::1]:51233 Closing
+[Mon Oct 20 18:24:28 2025] [::1]:51446 Accepted
+[Mon Oct 20 18:24:28 2025] [::1]:51446 [200]: GET /api/users?role=client&page=1&limit=50
+[Mon Oct 20 18:24:28 2025] [::1]:51446 Closing
+[Mon Oct 20 18:24:28 2025] [::1]:60863 Accepted
+[Mon Oct 20 18:24:28 2025] [::1]:60863 [200]: GET /api/users?role=client&page=1&limit=50
+[Mon Oct 20 18:24:28 2025] [::1]:60863 Closing
+[Mon Oct 20 18:24:29 2025] [::1]:62400 Accepted
+[Mon Oct 20 18:24:29 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:24:29 2025] [::1]:62400 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:24:29 2025] [::1]:62400 Closing
+[Mon Oct 20 18:24:29 2025] [::1]:63424 Accepted
+[Mon Oct 20 18:24:29 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:24:29 2025] [::1]:63424 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:24:29 2025] [::1]:63424 Closing
+[Mon Oct 20 18:24:41 2025] [::1]:51040 Accepted
+[Mon Oct 20 18:24:41 2025] PHP Warning:  Undefined array key "user" in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44
+[Mon Oct 20 18:24:41 2025] PHP Fatal error:  Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:24:41 2025] [::1]:51040 [500]: GET /api/payments/statistics/all - Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:24:41 2025] [::1]:51040 Closing
+[Mon Oct 20 18:24:41 2025] [::1]:58774 Accepted
+[Mon Oct 20 18:24:42 2025] PHP Warning:  Undefined array key "user" in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44
+[Mon Oct 20 18:24:42 2025] PHP Fatal error:  Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:24:42 2025] [::1]:58774 [500]: GET /api/payments/statistics/all - Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:24:42 2025] [::1]:58774 Closing
+[Mon Oct 20 18:24:42 2025] [::1]:53626 Accepted
+[Mon Oct 20 18:24:42 2025] PHP Fatal error:  Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 18:24:42 2025] [::1]:53626 [500]: GET /api/payments - Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 18:24:42 2025] [::1]:53626 Closing
+[Mon Oct 20 18:24:42 2025] [::1]:59321 Accepted
+[Mon Oct 20 18:24:42 2025] PHP Fatal error:  Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 18:24:42 2025] [::1]:59321 [500]: GET /api/payments - Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 20
+[Mon Oct 20 18:24:42 2025] [::1]:59321 Closing
+[Mon Oct 20 18:30:46 2025] [::1]:62326 Accepted
+[Mon Oct 20 18:30:46 2025] JWT Decode Error: Wrong number of segments
+[Mon Oct 20 18:30:46 2025] [::1]:62326 [401]: GET /api/payments/statistics/all
+[Mon Oct 20 18:30:46 2025] [::1]:62326 Closing
+[Mon Oct 20 18:31:18 2025] [::1]:51444 Accepted
+[Mon Oct 20 18:31:18 2025] [::1]:51444 [200]: GET /api/auth/verify
+[Mon Oct 20 18:31:18 2025] [::1]:51444 Closing
+[Mon Oct 20 18:31:18 2025] [::1]:57430 Accepted
+[Mon Oct 20 18:31:18 2025] [::1]:57430 [200]: GET /api/auth/verify
+[Mon Oct 20 18:31:18 2025] [::1]:57430 Closing
+[Mon Oct 20 18:31:18 2025] [::1]:59683 Accepted
+[Mon Oct 20 18:31:18 2025] PHP Warning:  Undefined array key "user" in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44
+[Mon Oct 20 18:31:18 2025] PHP Fatal error:  Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:31:18 2025] [::1]:59683 [500]: GET /api/payments/statistics/all - Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:31:18 2025] [::1]:59683 Closing
+[Mon Oct 20 18:31:18 2025] [::1]:55776 Accepted
+[Mon Oct 20 18:31:18 2025] PHP Warning:  Undefined array key "user" in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44
+[Mon Oct 20 18:31:18 2025] PHP Fatal error:  Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:31:18 2025] [::1]:55776 [500]: GET /api/payments/statistics/all - Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:31:18 2025] [::1]:55776 Closing
+[Mon Oct 20 18:31:18 2025] [::1]:64787 Accepted
+[Mon Oct 20 18:31:18 2025] PHP Fatal error:  Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 19
+[Mon Oct 20 18:31:18 2025] [::1]:64787 [500]: GET /api/payments - Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 19
+[Mon Oct 20 18:31:18 2025] [::1]:64787 Closing
+[Mon Oct 20 18:31:18 2025] [::1]:58894 Accepted
+[Mon Oct 20 18:31:18 2025] PHP Fatal error:  Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 19
+[Mon Oct 20 18:31:18 2025] [::1]:58894 [500]: GET /api/payments - Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 19
+[Mon Oct 20 18:31:18 2025] [::1]:58894 Closing
+[Mon Oct 20 18:31:20 2025] [::1]:50129 Accepted
+[Mon Oct 20 18:31:20 2025] [::1]:50129 [200]: GET /api/users?role=client&page=1&limit=50
+[Mon Oct 20 18:31:20 2025] [::1]:50129 Closing
+[Mon Oct 20 18:31:20 2025] [::1]:53545 Accepted
+[Mon Oct 20 18:31:20 2025] [::1]:53545 [200]: GET /api/users?role=client&page=1&limit=50
+[Mon Oct 20 18:31:20 2025] [::1]:53545 Closing
+[Mon Oct 20 18:31:21 2025] [::1]:58380 Accepted
+[Mon Oct 20 18:31:21 2025] [::1]:58380 [200]: GET /api/quotes?status=
+[Mon Oct 20 18:31:21 2025] [::1]:58380 Closing
+[Mon Oct 20 18:31:21 2025] [::1]:57844 Accepted
+[Mon Oct 20 18:31:21 2025] [::1]:57844 [200]: GET /api/quotes?status=
+[Mon Oct 20 18:31:21 2025] [::1]:57844 Closing
+[Mon Oct 20 18:31:22 2025] [::1]:62116 Accepted
+[Mon Oct 20 18:31:22 2025] PHP Fatal error:  Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 18:31:22 2025] [::1]:62116 [500]: GET /api/analytics/dashboard - Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 18:31:22 2025] [::1]:62116 Closing
+[Mon Oct 20 18:31:22 2025] [::1]:64892 Accepted
+[Mon Oct 20 18:31:22 2025] PHP Fatal error:  Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 18:31:22 2025] [::1]:64892 [500]: GET /api/analytics/dashboard - Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 18:31:22 2025] [::1]:64892 Closing
+[Mon Oct 20 18:31:24 2025] [::1]:64842 Accepted
+[Mon Oct 20 18:31:24 2025] [::1]:64842 [200]: GET /api/users?role=client&page=1&limit=50
+[Mon Oct 20 18:31:24 2025] [::1]:64842 Closing
+[Mon Oct 20 18:31:24 2025] [::1]:57950 Accepted
+[Mon Oct 20 18:31:24 2025] [::1]:57950 [200]: GET /api/users?role=client&page=1&limit=50
+[Mon Oct 20 18:31:24 2025] [::1]:57950 Closing
+[Mon Oct 20 18:31:24 2025] [::1]:52809 Accepted
+[Mon Oct 20 18:31:24 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:31:24 2025] [::1]:52809 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:31:24 2025] [::1]:52809 Closing
+[Mon Oct 20 18:31:24 2025] [::1]:58876 Accepted
+[Mon Oct 20 18:31:24 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:31:24 2025] [::1]:58876 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:31:24 2025] [::1]:58876 Closing
+[Mon Oct 20 18:31:25 2025] [::1]:50683 Accepted
+[Mon Oct 20 18:31:25 2025] PHP Warning:  Undefined array key "user" in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44
+[Mon Oct 20 18:31:25 2025] PHP Fatal error:  Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:31:25 2025] [::1]:50683 [500]: GET /api/payments/statistics/all - Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:31:25 2025] [::1]:50683 Closing
+[Mon Oct 20 18:31:25 2025] [::1]:59110 Accepted
+[Mon Oct 20 18:31:25 2025] PHP Warning:  Undefined array key "user" in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44
+[Mon Oct 20 18:31:25 2025] PHP Fatal error:  Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:31:25 2025] [::1]:59110 [500]: GET /api/payments/statistics/all - Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:31:25 2025] [::1]:59110 Closing
+[Mon Oct 20 18:31:25 2025] [::1]:52704 Accepted
+[Mon Oct 20 18:31:25 2025] PHP Fatal error:  Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 19
+[Mon Oct 20 18:31:25 2025] [::1]:52704 [500]: GET /api/payments - Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 19
+[Mon Oct 20 18:31:25 2025] [::1]:52704 Closing
+[Mon Oct 20 18:31:25 2025] [::1]:51716 Accepted
+[Mon Oct 20 18:31:25 2025] PHP Fatal error:  Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 19
+[Mon Oct 20 18:31:25 2025] [::1]:51716 [500]: GET /api/payments - Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 19
+[Mon Oct 20 18:31:25 2025] [::1]:51716 Closing
+[Mon Oct 20 18:31:27 2025] [::1]:54251 Accepted
+[Mon Oct 20 18:31:27 2025] Get Services Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'is_active' in 'where clause'
+[Mon Oct 20 18:31:27 2025] [::1]:54251 [500]: GET /api/services
+[Mon Oct 20 18:31:27 2025] [::1]:54251 Closing
+[Mon Oct 20 18:31:27 2025] [::1]:50109 Accepted
+[Mon Oct 20 18:31:27 2025] Get Services Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'is_active' in 'where clause'
+[Mon Oct 20 18:31:27 2025] [::1]:50109 [500]: GET /api/services
+[Mon Oct 20 18:31:27 2025] [::1]:50109 Closing
+[Mon Oct 20 18:31:29 2025] [::1]:60653 Accepted
+[Mon Oct 20 18:31:29 2025] PHP Warning:  Undefined array key "user" in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44
+[Mon Oct 20 18:31:29 2025] PHP Fatal error:  Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:31:29 2025] [::1]:60653 [500]: GET /api/payments/statistics/all - Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:31:29 2025] [::1]:60653 Closing
+[Mon Oct 20 18:31:29 2025] [::1]:61578 Accepted
+[Mon Oct 20 18:31:29 2025] PHP Warning:  Undefined array key "user" in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44
+[Mon Oct 20 18:31:29 2025] PHP Fatal error:  Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:31:29 2025] [::1]:61578 [500]: GET /api/payments/statistics/all - Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:31:29 2025] [::1]:61578 Closing
+[Mon Oct 20 18:31:29 2025] [::1]:50101 Accepted
+[Mon Oct 20 18:31:29 2025] PHP Fatal error:  Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 19
+[Mon Oct 20 18:31:29 2025] [::1]:50101 [500]: GET /api/payments - Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 19
+[Mon Oct 20 18:31:29 2025] [::1]:50101 Closing
+[Mon Oct 20 18:31:29 2025] [::1]:56902 Accepted
+[Mon Oct 20 18:31:29 2025] PHP Fatal error:  Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 19
+[Mon Oct 20 18:31:29 2025] [::1]:56902 [500]: GET /api/payments - Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 19
+[Mon Oct 20 18:31:29 2025] [::1]:56902 Closing
+[Mon Oct 20 18:31:29 2025] [::1]:64894 Accepted
+[Mon Oct 20 18:31:29 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:31:29 2025] [::1]:64894 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:31:29 2025] [::1]:64894 Closing
+[Mon Oct 20 18:31:29 2025] [::1]:60354 Accepted
+[Mon Oct 20 18:31:29 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:31:29 2025] [::1]:60354 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:31:29 2025] [::1]:60354 Closing
+[Mon Oct 20 18:31:32 2025] [::1]:60900 Accepted
+[Mon Oct 20 18:31:32 2025] PHP Warning:  Undefined array key "user" in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44
+[Mon Oct 20 18:31:32 2025] PHP Fatal error:  Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:31:32 2025] [::1]:60900 [500]: GET /api/payments/statistics/all - Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:31:32 2025] [::1]:60900 Closing
+[Mon Oct 20 18:31:32 2025] [::1]:54119 Accepted
+[Mon Oct 20 18:31:32 2025] PHP Warning:  Undefined array key "user" in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44
+[Mon Oct 20 18:31:32 2025] PHP Fatal error:  Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:31:32 2025] [::1]:54119 [500]: GET /api/payments/statistics/all - Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:31:32 2025] [::1]:54119 Closing
+[Mon Oct 20 18:31:32 2025] [::1]:61709 Accepted
+[Mon Oct 20 18:31:32 2025] PHP Fatal error:  Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 19
+[Mon Oct 20 18:31:32 2025] [::1]:61709 [500]: GET /api/payments - Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 19
+[Mon Oct 20 18:31:32 2025] [::1]:61709 Closing
+[Mon Oct 20 18:31:32 2025] [::1]:60571 Accepted
+[Mon Oct 20 18:31:33 2025] PHP Fatal error:  Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 19
+[Mon Oct 20 18:31:33 2025] [::1]:60571 [500]: GET /api/payments - Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 19
+[Mon Oct 20 18:31:33 2025] [::1]:60571 Closing
+[Mon Oct 20 18:31:52 2025] [::1]:52579 Accepted
+[Mon Oct 20 18:31:52 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:31:52 2025] [::1]:52579 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:31:52 2025] [::1]:52579 Closing
+[Mon Oct 20 18:31:52 2025] [::1]:50242 Accepted
+[Mon Oct 20 18:31:52 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:31:52 2025] [::1]:50242 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:31:52 2025] [::1]:50242 Closing
+[Mon Oct 20 18:31:54 2025] [::1]:61732 Accepted
+[Mon Oct 20 18:31:54 2025] PHP Warning:  Undefined array key "user" in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44
+[Mon Oct 20 18:31:54 2025] PHP Fatal error:  Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:31:54 2025] [::1]:61732 [500]: GET /api/payments/statistics/all - Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:31:54 2025] [::1]:61732 Closing
+[Mon Oct 20 18:31:54 2025] [::1]:57542 Accepted
+[Mon Oct 20 18:31:54 2025] PHP Warning:  Undefined array key "user" in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44
+[Mon Oct 20 18:31:54 2025] PHP Fatal error:  Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:31:54 2025] [::1]:57542 [500]: GET /api/payments/statistics/all - Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:31:54 2025] [::1]:57542 Closing
+[Mon Oct 20 18:31:54 2025] [::1]:58627 Accepted
+[Mon Oct 20 18:31:54 2025] PHP Fatal error:  Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 19
+[Mon Oct 20 18:31:54 2025] [::1]:58627 [500]: GET /api/payments - Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 19
+[Mon Oct 20 18:31:54 2025] [::1]:58627 Closing
+[Mon Oct 20 18:31:54 2025] [::1]:58047 Accepted
+[Mon Oct 20 18:31:54 2025] PHP Fatal error:  Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 19
+[Mon Oct 20 18:31:54 2025] [::1]:58047 [500]: GET /api/payments - Trait "App\Traits\ValidatesRequest" not found in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Controllers\PaymentController.php on line 19
+[Mon Oct 20 18:31:54 2025] [::1]:58047 Closing
+[Mon Oct 20 18:34:41 2025] [::1]:49690 Accepted
+[Mon Oct 20 18:34:41 2025] JWT Auth Header Missing. Available headers: ["Host","User-Agent","Accept","Content-Type"]
+[Mon Oct 20 18:34:41 2025] [::1]:49690 [401]: GET /api/projects?page=1&limit=20
+[Mon Oct 20 18:34:41 2025] [::1]:49690 Closing
+[Mon Oct 20 18:35:48 2025] [::1]:63666 Accepted
+[Mon Oct 20 18:35:50 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:35:50 2025] [::1]:63666 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:35:50 2025] [::1]:63666 Closing
+[Mon Oct 20 18:35:50 2025] [::1]:52515 Accepted
+[Mon Oct 20 18:35:50 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:35:50 2025] [::1]:52515 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:35:50 2025] [::1]:52515 Closing
+[Mon Oct 20 18:35:53 2025] [::1]:58679 Accepted
+[Mon Oct 20 18:35:53 2025] PHP Warning:  Undefined array key "user" in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44
+[Mon Oct 20 18:35:53 2025] PHP Fatal error:  Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:35:53 2025] [::1]:58679 [500]: GET /api/payments/statistics/all - Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:35:53 2025] [::1]:58679 Closing
+[Mon Oct 20 18:35:53 2025] [::1]:49690 Accepted
+[Mon Oct 20 18:35:53 2025] PHP Warning:  Undefined array key "user" in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44
+[Mon Oct 20 18:35:53 2025] PHP Fatal error:  Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:35:53 2025] [::1]:49690 [500]: GET /api/payments/statistics/all - Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:35:53 2025] [::1]:49690 Closing
+[Mon Oct 20 18:35:53 2025] [::1]:52565 Accepted
+[Mon Oct 20 18:35:54 2025] PHP Fatal error:  Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 18:35:54 2025] [::1]:52565 [500]: GET /api/payments - Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 18:35:54 2025] [::1]:52565 Closing
+[Mon Oct 20 18:35:54 2025] [::1]:53877 Accepted
+[Mon Oct 20 18:35:54 2025] PHP Fatal error:  Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 18:35:54 2025] [::1]:53877 [500]: GET /api/payments - Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 18:35:54 2025] [::1]:53877 Closing
+[Mon Oct 20 18:57:23 2025] [::1]:56529 Accepted
+[Mon Oct 20 18:57:23 2025] JWT Decode Error: Expired token
+[Mon Oct 20 18:57:23 2025] [::1]:56529 [401]: GET /api/analytics/dashboard
+[Mon Oct 20 18:57:23 2025] [::1]:56529 Closing
+[Mon Oct 20 18:57:23 2025] [::1]:56542 Accepted
+[Mon Oct 20 18:57:23 2025] JWT Decode Error: Expired token
+[Mon Oct 20 18:57:23 2025] [::1]:56542 [401]: GET /api/analytics/dashboard
+[Mon Oct 20 18:57:23 2025] [::1]:56542 Closing
+[Mon Oct 20 18:57:53 2025] [::1]:53075 Accepted
+[Mon Oct 20 18:57:54 2025] [::1]:53075 [200]: POST /api/auth/login
+[Mon Oct 20 18:57:54 2025] [::1]:53075 Closing
+[Mon Oct 20 18:57:54 2025] [::1]:63735 Accepted
+[Mon Oct 20 18:57:54 2025] PHP Fatal error:  Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 18:57:54 2025] [::1]:63735 [500]: GET /api/analytics/dashboard - Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 18:57:54 2025] [::1]:63735 Closing
+[Mon Oct 20 18:57:54 2025] [::1]:54023 Accepted
+[Mon Oct 20 18:57:54 2025] PHP Fatal error:  Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 18:57:54 2025] [::1]:54023 [500]: GET /api/analytics/dashboard - Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 18:57:54 2025] [::1]:54023 Closing
+[Mon Oct 20 18:57:56 2025] [::1]:55880 Accepted
+[Mon Oct 20 18:57:57 2025] [::1]:55880 [200]: GET /api/quotes?status=
+[Mon Oct 20 18:57:57 2025] [::1]:55880 Closing
+[Mon Oct 20 18:57:57 2025] [::1]:51676 Accepted
+[Mon Oct 20 18:57:57 2025] [::1]:51676 [200]: GET /api/quotes?status=
+[Mon Oct 20 18:57:57 2025] [::1]:51676 Closing
+[Mon Oct 20 18:57:57 2025] [::1]:51025 Accepted
+[Mon Oct 20 18:57:58 2025] [::1]:51025 [200]: GET /api/users?role=client&page=1&limit=50
+[Mon Oct 20 18:57:58 2025] [::1]:51025 Closing
+[Mon Oct 20 18:57:58 2025] [::1]:58617 Accepted
+[Mon Oct 20 18:57:58 2025] [::1]:58617 [200]: GET /api/users?role=client&page=1&limit=50
+[Mon Oct 20 18:57:58 2025] [::1]:58617 Closing
+[Mon Oct 20 18:57:59 2025] [::1]:54827 Accepted
+[Mon Oct 20 18:57:59 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:57:59 2025] [::1]:54827 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:57:59 2025] [::1]:54827 Closing
+[Mon Oct 20 18:57:59 2025] [::1]:52192 Accepted
+[Mon Oct 20 18:57:59 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:57:59 2025] [::1]:52192 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 18:57:59 2025] [::1]:52192 Closing
+[Mon Oct 20 18:59:02 2025] [::1]:65105 Accepted
+[Mon Oct 20 18:59:02 2025] PHP Fatal error:  Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 18:59:02 2025] [::1]:65105 [500]: GET /api/analytics/dashboard - Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 18:59:02 2025] [::1]:65105 Closing
+[Mon Oct 20 18:59:02 2025] [::1]:60645 Accepted
+[Mon Oct 20 18:59:02 2025] PHP Fatal error:  Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 18:59:02 2025] [::1]:60645 [500]: GET /api/analytics/dashboard - Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 18:59:02 2025] [::1]:60645 Closing
+[Mon Oct 20 18:59:03 2025] [::1]:56119 Accepted
+[Mon Oct 20 18:59:03 2025] PHP Warning:  Undefined array key "user" in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44
+[Mon Oct 20 18:59:03 2025] PHP Fatal error:  Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:59:03 2025] [::1]:56119 [500]: GET /api/payments/statistics/all - Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:59:03 2025] [::1]:56119 Closing
+[Mon Oct 20 18:59:03 2025] [::1]:49726 Accepted
+[Mon Oct 20 18:59:03 2025] PHP Warning:  Undefined array key "user" in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44
+[Mon Oct 20 18:59:03 2025] PHP Fatal error:  Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:59:03 2025] [::1]:49726 [500]: GET /api/payments/statistics/all - Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 18:59:03 2025] [::1]:49726 Closing
+[Mon Oct 20 18:59:03 2025] [::1]:53056 Accepted
+[Mon Oct 20 18:59:03 2025] PHP Fatal error:  Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 18:59:03 2025] [::1]:53056 [500]: GET /api/payments - Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 18:59:03 2025] [::1]:53056 Closing
+[Mon Oct 20 18:59:03 2025] [::1]:58213 Accepted
+[Mon Oct 20 18:59:04 2025] PHP Fatal error:  Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 18:59:04 2025] [::1]:58213 [500]: GET /api/payments - Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 18:59:04 2025] [::1]:58213 Closing
+[Mon Oct 20 19:02:24 2025] [::1]:54814 Accepted
+[Mon Oct 20 19:02:24 2025] PHP Fatal error:  Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 19:02:24 2025] [::1]:54814 [500]: GET /api/analytics/dashboard - Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 19:02:24 2025] [::1]:54814 Closing
+[Mon Oct 20 19:02:24 2025] [::1]:54688 Accepted
+[Mon Oct 20 19:02:24 2025] PHP Fatal error:  Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 19:02:24 2025] [::1]:54688 [500]: GET /api/analytics/dashboard - Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 19:02:24 2025] [::1]:54688 Closing
+[Mon Oct 20 19:02:26 2025] [::1]:58759 Accepted
+[Mon Oct 20 19:02:26 2025] PHP Warning:  Undefined array key "user" in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44
+[Mon Oct 20 19:02:26 2025] PHP Fatal error:  Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 19:02:26 2025] [::1]:58759 [500]: GET /api/payments/statistics/all - Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 19:02:26 2025] [::1]:58759 Closing
+[Mon Oct 20 19:02:26 2025] [::1]:63936 Accepted
+[Mon Oct 20 19:02:26 2025] PHP Warning:  Undefined array key "user" in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44
+[Mon Oct 20 19:02:26 2025] PHP Fatal error:  Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 19:02:26 2025] [::1]:63936 [500]: GET /api/payments/statistics/all - Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(79): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 19:02:26 2025] [::1]:63936 Closing
+[Mon Oct 20 19:02:26 2025] [::1]:59384 Accepted
+[Mon Oct 20 19:02:26 2025] PHP Fatal error:  Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 19:02:26 2025] [::1]:59384 [500]: GET /api/payments - Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 19:02:26 2025] [::1]:59384 Closing
+[Mon Oct 20 19:02:26 2025] [::1]:52545 Accepted
+[Mon Oct 20 19:02:26 2025] PHP Fatal error:  Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 19:02:26 2025] [::1]:52545 [500]: GET /api/payments - Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 19:02:26 2025] [::1]:52545 Closing
+[Mon Oct 20 19:03:35 2025] [::1]:58239 Accepted
+[Mon Oct 20 19:03:35 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 19:03:35 2025] [::1]:58239 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 19:03:35 2025] [::1]:58239 Closing
+[Mon Oct 20 19:03:35 2025] [::1]:55910 Accepted
+[Mon Oct 20 19:03:35 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 19:03:35 2025] [::1]:55910 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 19:03:35 2025] [::1]:55910 Closing
+[Mon Oct 20 19:03:37 2025] [::1]:65098 Accepted
+[Mon Oct 20 19:03:37 2025] [::1]:65098 [200]: GET /api/users?role=client&page=1&limit=50
+[Mon Oct 20 19:03:37 2025] [::1]:65098 Closing
+[Mon Oct 20 19:03:37 2025] [::1]:49929 Accepted
+[Mon Oct 20 19:03:37 2025] [::1]:49929 [200]: GET /api/users?role=client&page=1&limit=50
+[Mon Oct 20 19:03:37 2025] [::1]:49929 Closing
+[Mon Oct 20 19:03:38 2025] [::1]:61626 Accepted
+[Mon Oct 20 19:03:38 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 19:03:38 2025] [::1]:61626 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 19:03:38 2025] [::1]:61626 Closing
+[Mon Oct 20 19:03:38 2025] [::1]:50157 Accepted
+[Mon Oct 20 19:03:38 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 19:03:38 2025] [::1]:50157 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 19:03:38 2025] [::1]:50157 Closing
+[Mon Oct 20 19:05:11 2025] [::1]:61265 Accepted
+[Mon Oct 20 19:05:11 2025] [::1]:61265 [200]: OPTIONS /api/projects?status=in_progress&page=1&limit=20
+[Mon Oct 20 19:05:11 2025] [::1]:61265 Closing
+[Mon Oct 20 19:05:11 2025] [::1]:58638 Accepted
+[Mon Oct 20 19:05:11 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 19:05:11 2025] [::1]:58638 [500]: GET /api/projects?status=in_progress&page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 19:05:11 2025] [::1]:58638 Closing
+[Mon Oct 20 19:05:12 2025] [::1]:54037 Accepted
+[Mon Oct 20 19:05:12 2025] [::1]:54037 [200]: OPTIONS /api/projects?status=planning&page=1&limit=20
+[Mon Oct 20 19:05:12 2025] [::1]:54037 Closing
+[Mon Oct 20 19:05:13 2025] [::1]:55343 Accepted
+[Mon Oct 20 19:05:13 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 19:05:13 2025] [::1]:55343 [500]: GET /api/projects?status=planning&page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 19:05:13 2025] [::1]:55343 Closing
+[Mon Oct 20 19:07:07 2025] [::1]:60670 Accepted
+[Mon Oct 20 19:07:07 2025] PHP Fatal error:  Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 19:07:07 2025] [::1]:60670 [500]: GET /api/analytics/dashboard - Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 19:07:07 2025] [::1]:60670 Closing
+[Mon Oct 20 19:07:07 2025] [::1]:52001 Accepted
+[Mon Oct 20 19:07:07 2025] PHP Fatal error:  Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 19:07:07 2025] [::1]:52001 [500]: GET /api/analytics/dashboard - Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 19:07:07 2025] [::1]:52001 Closing
+[Mon Oct 20 19:07:48 2025] [::1]:56896 Accepted
+[Mon Oct 20 19:07:48 2025] [::1]:56896 [200]: GET /api/users?role=client&page=1&limit=50
+[Mon Oct 20 19:07:48 2025] [::1]:56896 Closing
+[Mon Oct 20 19:07:48 2025] [::1]:50403 Accepted
+[Mon Oct 20 19:07:48 2025] [::1]:50403 [200]: GET /api/users?role=client&page=1&limit=50
+[Mon Oct 20 19:07:48 2025] [::1]:50403 Closing
+[Mon Oct 20 19:07:49 2025] [::1]:64832 Accepted
+[Mon Oct 20 19:07:49 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 19:07:49 2025] [::1]:64832 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 19:07:49 2025] [::1]:64832 Closing
+[Mon Oct 20 19:07:49 2025] [::1]:50840 Accepted
+[Mon Oct 20 19:07:49 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 19:07:49 2025] [::1]:50840 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 19:07:49 2025] [::1]:50840 Closing
+[Mon Oct 20 19:08:08 2025] [::1]:55951 Accepted
+[Mon Oct 20 19:08:08 2025] PHP Fatal error:  Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 19:08:08 2025] [::1]:55951 [500]: GET /api/analytics/dashboard - Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 19:08:08 2025] [::1]:55951 Closing
+[Mon Oct 20 19:08:08 2025] [::1]:63020 Accepted
+[Mon Oct 20 19:08:08 2025] PHP Fatal error:  Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 19:08:08 2025] [::1]:63020 [500]: GET /api/analytics/dashboard - Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 19:08:08 2025] [::1]:63020 Closing
+[Mon Oct 20 19:09:15 2025] [::1]:54748 Accepted
+[Mon Oct 20 19:09:15 2025] PHP Fatal error:  Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 19:09:15 2025] [::1]:54748 [500]: GET /api/analytics/dashboard - Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 19:09:15 2025] [::1]:54748 Closing
+[Mon Oct 20 19:11:17 2025] [::1]:61271 Accepted
+[Mon Oct 20 19:11:17 2025] [::1]:61271 [200]: GET /api/quotes?status=
+[Mon Oct 20 19:11:17 2025] [::1]:61271 Closing
+[Mon Oct 20 19:11:17 2025] [::1]:56250 Accepted
+[Mon Oct 20 19:11:17 2025] [::1]:56250 [200]: GET /api/quotes?status=
+[Mon Oct 20 19:11:17 2025] [::1]:56250 Closing
+[Mon Oct 20 19:11:19 2025] [::1]:64520 Accepted
+[Mon Oct 20 19:11:19 2025] [::1]:64520 [200]: GET /api/users?role=client&page=1&limit=50
+[Mon Oct 20 19:11:19 2025] [::1]:64520 Closing
+[Mon Oct 20 19:11:19 2025] [::1]:61493 Accepted
+[Mon Oct 20 19:11:19 2025] [::1]:61493 [200]: GET /api/users?role=client&page=1&limit=50
+[Mon Oct 20 19:11:19 2025] [::1]:61493 Closing
+[Mon Oct 20 19:11:20 2025] [::1]:58906 Accepted
+[Mon Oct 20 19:11:20 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 19:11:20 2025] [::1]:58906 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 19:11:20 2025] [::1]:58906 Closing
+[Mon Oct 20 19:11:20 2025] [::1]:57910 Accepted
+[Mon Oct 20 19:11:20 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 19:11:20 2025] [::1]:57910 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 19:11:20 2025] [::1]:57910 Closing
+[Mon Oct 20 19:12:17 2025] [::1]:57831 Accepted
+[Mon Oct 20 19:12:17 2025] PHP Warning:  Undefined array key "user" in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44
+[Mon Oct 20 19:12:17 2025] PHP Fatal error:  Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(82): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 19:12:17 2025] [::1]:57831 [500]: GET /api/payments/statistics/all - Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(82): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 19:12:17 2025] [::1]:57831 Closing
+[Mon Oct 20 19:12:17 2025] [::1]:52198 Accepted
+[Mon Oct 20 19:12:17 2025] PHP Warning:  Undefined array key "user" in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44
+[Mon Oct 20 19:12:17 2025] PHP Fatal error:  Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(82): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 19:12:17 2025] [::1]:52198 [500]: GET /api/payments/statistics/all - Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(82): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 19:12:17 2025] [::1]:52198 Closing
+[Mon Oct 20 19:12:17 2025] [::1]:52195 Accepted
+[Mon Oct 20 19:12:17 2025] PHP Fatal error:  Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 19:12:17 2025] [::1]:52195 [500]: GET /api/payments - Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 19:12:17 2025] [::1]:52195 Closing
+[Mon Oct 20 19:12:17 2025] [::1]:55846 Accepted
+[Mon Oct 20 19:12:17 2025] PHP Fatal error:  Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 19:12:17 2025] [::1]:55846 [500]: GET /api/payments - Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 19:12:17 2025] [::1]:55846 Closing
+[Mon Oct 20 19:37:11 2025] [::1]:53832 Accepted
+[Mon Oct 20 19:37:11 2025] [::1]:64230 Accepted
+[Mon Oct 20 19:37:11 2025] [::1]:53832 [200]: OPTIONS /api/users?role=client&page=1&limit=50
+[Mon Oct 20 19:37:11 2025] [::1]:53832 Closing
+[Mon Oct 20 19:37:11 2025] [::1]:64230 [200]: OPTIONS /api/users?role=client&page=1&limit=50
+[Mon Oct 20 19:37:11 2025] [::1]:64230 Closing
+[Mon Oct 20 19:37:11 2025] [::1]:55362 Accepted
+[Mon Oct 20 19:37:11 2025] [::1]:55362 [200]: GET /api/users?role=client&page=1&limit=50
+[Mon Oct 20 19:37:11 2025] [::1]:55362 Closing
+[Mon Oct 20 19:37:11 2025] [::1]:58660 Accepted
+[Mon Oct 20 19:37:11 2025] [::1]:58660 [200]: GET /api/users?role=client&page=1&limit=50
+[Mon Oct 20 19:37:11 2025] [::1]:58660 Closing
+[Mon Oct 20 19:37:12 2025] [::1]:55059 Accepted
+[Mon Oct 20 19:37:12 2025] [::1]:59875 Accepted
+[Mon Oct 20 19:37:12 2025] [::1]:55059 [200]: OPTIONS /api/projects?page=1&limit=20
+[Mon Oct 20 19:37:12 2025] [::1]:55059 Closing
+[Mon Oct 20 19:37:12 2025] [::1]:59875 [200]: OPTIONS /api/projects?page=1&limit=20
+[Mon Oct 20 19:37:12 2025] [::1]:59875 Closing
+[Mon Oct 20 19:37:12 2025] [::1]:58806 Accepted
+[Mon Oct 20 19:37:13 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 19:37:13 2025] [::1]:58806 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 19:37:13 2025] [::1]:58806 Closing
+[Mon Oct 20 19:37:13 2025] [::1]:59478 Accepted
+[Mon Oct 20 19:37:13 2025] PHP Fatal error:  Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 19:37:13 2025] [::1]:59478 [500]: GET /api/projects?page=1&limit=20 - Declaration of App\Models\Project::count(string $status = '', int $clientId = 0): int must be compatible with App\Models\BaseModel::count(array $where = []): int in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Project.php on line 48
+[Mon Oct 20 19:37:13 2025] [::1]:59478 Closing
+[Mon Oct 20 19:37:19 2025] [::1]:65215 Accepted
+[Mon Oct 20 19:37:19 2025] PHP Warning:  Undefined array key "user" in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44
+[Mon Oct 20 19:37:19 2025] PHP Fatal error:  Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(82): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 19:37:19 2025] [::1]:65215 [500]: GET /api/payments/statistics/all - Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(82): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 19:37:19 2025] [::1]:65215 Closing
+[Mon Oct 20 19:37:19 2025] [::1]:56443 Accepted
+[Mon Oct 20 19:37:20 2025] PHP Warning:  Undefined array key "user" in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44
+[Mon Oct 20 19:37:20 2025] PHP Fatal error:  Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(82): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 19:37:20 2025] [::1]:56443 [500]: GET /api/payments/statistics/all - Uncaught TypeError: App\Middleware\AdminMiddleware::verify(): Argument #1 ($user) must be of type object, null given, called in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php on line 44 and defined in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php:24
+Stack trace:
+#0 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\routes\payments.php(44): App\Middleware\AdminMiddleware::verify(NULL)
+#1 [internal function]: App\Helpers\Router->{closure}()
+#2 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Helpers\Router.php(100): call_user_func_array(Object(Closure), Array)
+#3 C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\public\index.php(82): App\Helpers\Router->dispatch()
+#4 {main}
+  thrown in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Middleware\AdminMiddleware.php on line 24
+[Mon Oct 20 19:37:20 2025] [::1]:56443 Closing
+[Mon Oct 20 19:37:20 2025] [::1]:56460 Accepted
+[Mon Oct 20 19:37:20 2025] [::1]:59079 Accepted
+[Mon Oct 20 19:37:20 2025] [::1]:56460 [200]: OPTIONS /api/payments
+[Mon Oct 20 19:37:20 2025] [::1]:56460 Closing
+[Mon Oct 20 19:37:20 2025] [::1]:59079 [200]: OPTIONS /api/payments
+[Mon Oct 20 19:37:20 2025] [::1]:59079 Closing
+[Mon Oct 20 19:37:20 2025] [::1]:64737 Accepted
+[Mon Oct 20 19:37:20 2025] PHP Fatal error:  Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 19:37:20 2025] [::1]:64737 [500]: GET /api/payments - Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 19:37:20 2025] [::1]:64737 Closing
+[Mon Oct 20 19:37:20 2025] [::1]:64458 Accepted
+[Mon Oct 20 19:37:20 2025] PHP Fatal error:  Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 19:37:20 2025] [::1]:64458 [500]: GET /api/payments - Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 19:37:20 2025] [::1]:64458 Closing
+[Mon Oct 20 19:37:23 2025] [::1]:55989 Accepted
+[Mon Oct 20 19:37:23 2025] [::1]:55989 [200]: OPTIONS /api/analytics/dashboard
+[Mon Oct 20 19:37:23 2025] [::1]:55989 Closing
+[Mon Oct 20 19:37:23 2025] [::1]:50387 Accepted
+[Mon Oct 20 19:37:24 2025] [::1]:50387 [200]: OPTIONS /api/analytics/dashboard
+[Mon Oct 20 19:37:24 2025] [::1]:50387 Closing
+[Mon Oct 20 19:37:24 2025] [::1]:62289 Accepted
+[Mon Oct 20 19:37:24 2025] PHP Fatal error:  Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 19:37:24 2025] [::1]:62289 [500]: GET /api/analytics/dashboard - Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 19:37:24 2025] [::1]:62289 Closing
+[Mon Oct 20 19:37:24 2025] [::1]:52503 Accepted
+[Mon Oct 20 19:37:24 2025] PHP Fatal error:  Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 19:37:24 2025] [::1]:52503 [500]: GET /api/analytics/dashboard - Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
+[Mon Oct 20 19:37:24 2025] [::1]:52503 Closing

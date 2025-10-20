@@ -1,0 +1,5 @@
+/* Test file to verify CSS is loading */
+body {
+  background-color: red !important;
+  color: white !important;
+}
