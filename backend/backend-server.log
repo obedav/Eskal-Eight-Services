@@ -1747,3 +1747,9 @@ Stack trace:
 [Mon Oct 20 19:37:24 2025] PHP Fatal error:  Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
 [Mon Oct 20 19:37:24 2025] [::1]:52503 [500]: GET /api/analytics/dashboard - Cannot redeclare App\Models\Payment::getAll() in C:\Users\obeda\Desktop\ESKAL-EIGHT-SERVICES\backend\app\Models\Payment.php on line 400
 [Mon Oct 20 19:37:24 2025] [::1]:52503 Closing
+[Mon Oct 20 20:00:22 2025] [::1]:52625 Accepted
+[Mon Oct 20 20:00:22 2025] [::1]:65028 Accepted
+[Mon Oct 20 20:00:25 2025] [::1]:65028 [200]: GET /api/health
+[Mon Oct 20 20:00:25 2025] [::1]:65028 Closing
+[Mon Oct 20 20:00:25 2025] [::1]:52625 [404]: GET /favicon.ico - No such file or directory
+[Mon Oct 20 20:00:25 2025] [::1]:52625 Closing

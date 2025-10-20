@@ -2,13 +2,14 @@
 
 **Delivering Quality, Efficiency & Trust**
 
-A comprehensive multi-service ecommerce platform for procurement, logistics, construction, and technical services.
+A comprehensive multi-service ecommerce platform for procurement, logistics, construction, tech services and technical services.
 
 ---
 
 ## 🌟 Features
 
 ### Authentication System
+
 - ✅ User registration and login
 - ✅ JWT-based authentication
 - ✅ Role-based access control (Client, Admin, Super Admin)
@@ -17,6 +18,7 @@ A comprehensive multi-service ecommerce platform for procurement, logistics, con
 - ✅ Protected routes
 
 ### Services Offered
+
 1. **Procurement & Supplies** - Sourcing and delivering goods, materials, and equipment
 2. **Logistics & Haulage** - Transportation and fleet management
 3. **Construction & Civil Works** - Building and infrastructure projects
@@ -27,6 +29,7 @@ A comprehensive multi-service ecommerce platform for procurement, logistics, con
 ### Tech Stack
 
 **Frontend:**
+
 - React 18
 - React Router v6
 - Axios
@@ -34,6 +37,7 @@ A comprehensive multi-service ecommerce platform for procurement, logistics, con
 - Context API for state management
 
 **Backend:**
+
 - PHP 8.0+
 - MySQL
 - JWT Authentication
@@ -41,6 +45,7 @@ A comprehensive multi-service ecommerce platform for procurement, logistics, con
 - PDO for database operations
 
 **Payment Integration:**
+
 - Paystack
 - Flutterwave
 
@@ -49,6 +54,7 @@ A comprehensive multi-service ecommerce platform for procurement, logistics, con
 ## 📦 Installation
 
 ### Prerequisites
+
 - PHP 8.0 or higher
 - MySQL 5.7 or higher
 - Node.js 16+ and npm
@@ -68,12 +74,14 @@ See [LOGIN_SETUP_GUIDE.md](LOGIN_SETUP_GUIDE.md) for comprehensive documentation
 ## 🚀 Getting Started
 
 ### 1. Clone the repository
+
 ```bash
 git clone https://github.com/yourusername/eskal-eight-services.git
 cd eskal-eight-services
 ```
 
 ### 2. Backend Setup
+
 ```bash
 cd backend
 composer install
@@ -86,6 +94,7 @@ mysql -u root -p eskal_eight_db < database/migrations/001_create_users_table.sql
 ```
 
 ### 3. Frontend Setup
+
 ```bash
 cd frontend
 npm install
@@ -95,10 +104,12 @@ npm start
 ```
 
 ### 4. Access the Application
+
 - **Frontend:** http://localhost:3000
 - **Backend API:** http://localhost/api
 
 ### 5. Default Login
+
 ```
 Email: admin@eskaleight.com
 Password: Admin@123
@@ -151,16 +162,16 @@ ESKAL-EIGHT-SERVICES/
 
 ### Authentication
 
-| Method | Endpoint | Description | Auth Required |
-|--------|----------|-------------|---------------|
-| POST | `/api/auth/register` | Register new user | No |
-| POST | `/api/auth/login` | Login user | No |
-| POST | `/api/auth/forgot-password` | Request password reset | No |
-| POST | `/api/auth/reset-password` | Reset password with token | No |
-| GET | `/api/auth/verify` | Verify JWT token | Yes |
-| GET | `/api/auth/me` | Get current user | Yes |
-| PUT | `/api/auth/profile` | Update profile | Yes |
-| POST | `/api/auth/change-password` | Change password | Yes |
+| Method | Endpoint                    | Description               | Auth Required |
+| ------ | --------------------------- | ------------------------- | ------------- |
+| POST   | `/api/auth/register`        | Register new user         | No            |
+| POST   | `/api/auth/login`           | Login user                | No            |
+| POST   | `/api/auth/forgot-password` | Request password reset    | No            |
+| POST   | `/api/auth/reset-password`  | Reset password with token | No            |
+| GET    | `/api/auth/verify`          | Verify JWT token          | Yes           |
+| GET    | `/api/auth/me`              | Get current user          | Yes           |
+| PUT    | `/api/auth/profile`         | Update profile            | Yes           |
+| POST   | `/api/auth/change-password` | Change password           | Yes           |
 
 ### Example Login Request
 
@@ -205,6 +216,7 @@ Text (Gray):            #4B4B4B
 ```
 
 These colors represent:
+
 - **Trust & Reliability** (Deep Blue)
 - **Innovation & Clarity** (Sky Blue)
 - **Professionalism** (Clean design)
@@ -227,12 +239,14 @@ These colors represent:
 ## 👥 User Roles
 
 1. **Client** - Regular customers
+
    - Request quotes
    - View projects
    - Make payments
    - Track orders
 
 2. **Admin** - Company administrators
+
    - Manage quotes
    - Track projects
    - View payments
@@ -249,6 +263,7 @@ These colors represent:
 ## 📝 Environment Variables
 
 ### Backend (.env)
+
 ```env
 DB_HOST=localhost
 DB_NAME=eskal_eight_db
@@ -262,6 +277,7 @@ FRONTEND_URL=http://localhost:3000
 ```
 
 ### Frontend (.env.local)
+
 ```env
 REACT_APP_API_URL=http://localhost/api
 REACT_APP_PAYSTACK_PUBLIC_KEY=your-key
@@ -273,6 +289,7 @@ REACT_APP_FLUTTERWAVE_PUBLIC_KEY=your-key
 ## 🧪 Testing
 
 ### Backend API Test
+
 ```bash
 # Health check
 curl http://localhost/api/health
@@ -290,6 +307,7 @@ curl -X POST http://localhost/api/auth/register \
 ```
 
 ### Frontend
+
 1. Navigate to http://localhost:3000
 2. Click "Register" to create an account
 3. Login with credentials
@@ -300,20 +318,24 @@ curl -X POST http://localhost/api/auth/register \
 ## 🐛 Troubleshooting
 
 ### Database Connection Failed
+
 - Check MySQL is running
 - Verify database credentials in `.env`
 - Ensure database exists
 
 ### CORS Errors
+
 - Check allowed origins in `backend/config/cors.php`
 - Verify frontend URL in backend `.env`
 
 ### JWT Token Invalid
+
 - Check `JWT_SECRET` matches in backend `.env`
 - Ensure token hasn't expired
 - Verify `Authorization: Bearer {token}` format
 
 ### Routes Not Working (404)
+
 - Enable Apache `mod_rewrite`
 - Check `.htaccess` in `backend/public/`
 - Verify virtual host configuration
@@ -332,6 +354,7 @@ curl -X POST http://localhost/api/auth/register \
 ## 🗺️ Roadmap
 
 ### Phase 1: Authentication ✅
+
 - [x] User registration
 - [x] User login
 - [x] Password reset
@@ -339,6 +362,7 @@ curl -X POST http://localhost/api/auth/register \
 - [x] Role-based access
 
 ### Phase 2: Core Features (In Progress)
+
 - [ ] Service catalog
 - [ ] Quote request system
 - [ ] Project management
@@ -346,6 +370,7 @@ curl -X POST http://localhost/api/auth/register \
 - [ ] File upload/management
 
 ### Phase 3: Advanced Features
+
 - [ ] Real-time notifications
 - [ ] Email integration
 - [ ] SMS notifications
@@ -353,6 +378,7 @@ curl -X POST http://localhost/api/auth/register \
 - [ ] Report generation
 
 ### Phase 4: Enhancement
+
 - [ ] Mobile app
 - [ ] Advanced search
 - [ ] API documentation
@@ -380,6 +406,7 @@ This project is proprietary software owned by ESKAL EIGHT SERVICES.
 ## 📞 Contact
 
 **ESKAL EIGHT SERVICES**
+
 - Website: https://eskaleight.com
 - Email: info@eskaleight.com
 - Phone: +234 XXX XXX XXXX
