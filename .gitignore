@@ -1,1 +1,12 @@
+# Frontend
 /frontend/build/
+/frontend/node_modules/
+
+# Backend
+/backend/node_modules/
+/backend/.env
+/backend/storage/*.key
+/backend/storage/*.pem
+/backend/storage/oauth-private.key
+/backend/storage/oauth-public.key
+/backend/storage/logs/*.log
