@@ -7,104 +7,104 @@ const Services = () => {
   const services = [
     {
       id: 1,
+      title: 'Brand Management',
+      category: 'branding',
+      description: 'Corporate identity development and comprehensive branding solutions.',
+      icon: '🎨',
+      features: [
+        'Corporate Branding',
+        'Product Customization',
+        'Marketing Materials',
+        'Brand Strategy',
+        'Visual Identity Design',
+      ],
+      color: 'from-purple-500 to-pink-600',
+    },
+    {
+      id: 2,
       title: 'Procurement & Supplies',
       category: 'procurement',
       description: 'Sourcing and delivering goods, materials, and equipment for various industries.',
       icon: '📦',
       features: [
         'Office Equipment',
-        'Engineering Tools',
+        'Branded Products',
         'Safety Gear',
-        'Building Materials',
+        'Corporate Gifts',
         'IT Equipment',
       ],
-      color: 'bg-blue-500',
+      color: 'from-blue-500 to-blue-600',
     },
     {
-      id: 2,
+      id: 3,
       title: 'Logistics & Haulage',
       category: 'logistics',
       description: 'Professional transportation and fleet management services across Nigeria.',
       icon: '🚚',
       features: [
         'Local & Interstate Delivery',
-        'Heavy Equipment Transport',
+        'Equipment Transport',
         'Fleet Management',
         'Warehousing',
         'Real-time Tracking',
       ],
-      color: 'bg-green-500',
-    },
-    {
-      id: 3,
-      title: 'Construction & Civil Works',
-      category: 'construction',
-      description: 'Complete building construction, renovation, and infrastructure development.',
-      icon: '🏗️',
-      features: [
-        'Residential Construction',
-        'Commercial Buildings',
-        'Renovations',
-        'Site Supervision',
-        'Project Management',
-      ],
-      color: 'bg-orange-500',
+      color: 'from-green-500 to-green-600',
     },
     {
       id: 4,
-      title: 'Engineering & Technical Services',
-      category: 'engineering',
-      description: 'Professional installation, maintenance, and technical support services.',
-      icon: '⚙️',
+      title: 'Printing Services',
+      category: 'printing',
+      description: 'Professional printing and customization services for all your branding needs.',
+      icon: '🖨️',
       features: [
-        'Electrical Installation',
-        'Mechanical Services',
-        'ICT Setup',
-        'Equipment Maintenance',
-        'Technical Support',
+        'Large Format Printing',
+        'Product Branding',
+        'Promotional Materials',
+        'Banners & Signage',
+        'Custom Packaging',
       ],
-      color: 'bg-purple-500',
+      color: 'from-orange-500 to-red-600',
     },
     {
       id: 5,
-      title: 'Consultancy & Project Management',
+      title: 'Consultancy',
       category: 'consultancy',
-      description: 'Expert advisory and coordination services for complex projects.',
+      description: 'Expert advisory services for brand development and business growth.',
       icon: '💼',
       features: [
-        'Project Planning',
-        'Risk Management',
-        'Quality Assurance',
-        'Budget Control',
+        'Brand Strategy',
+        'Market Research',
+        'Business Planning',
+        'Brand Positioning',
         'Stakeholder Management',
       ],
-      color: 'bg-indigo-500',
+      color: 'from-indigo-500 to-purple-600',
     },
     {
       id: 6,
-      title: 'General Contracts',
-      category: 'contracts',
-      description: 'Comprehensive contracting services for government and private sector.',
-      icon: '📋',
+      title: 'Corporate Gifting',
+      category: 'gifting',
+      description: 'Premium branded corporate gifts and promotional merchandise.',
+      icon: '🎁',
       features: [
-        'Tender Registration',
-        'Contract Bidding',
-        'Partnership Services',
-        'Compliance Management',
-        'Multi-sector Projects',
+        'Custom Gift Items',
+        'Bulk Orders',
+        'Corporate Packages',
+        'Seasonal Promotions',
+        'Gift Wrapping',
       ],
-      color: 'bg-red-500',
+      color: 'from-pink-500 to-red-600',
     },
   ];
 
   const categories = [
     { id: 'all', name: 'All Services' },
+    { id: 'branding', name: 'Branding' },
     { id: 'procurement', name: 'Procurement' },
     { id: 'logistics', name: 'Logistics' },
-    { id: 'construction', name: 'Construction' },
-    { id: 'engineering', name: 'Engineering' },
+    { id: 'printing', name: 'Printing' },
     { id: 'consultancy', name: 'Consultancy' },
-    { id: 'contracts', name: 'Contracts' },
+    { id: 'gifting', name: 'Gifting' },
   ];
 
   const filteredServices =
@@ -115,31 +115,47 @@ const Services = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-blue-900 to-blue-700 text-white">
-        <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+      <div className="relative bg-gradient-to-br from-[#0B1F3F] to-[#1E90FF] text-white overflow-hidden">
+        {/* Background elements */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-20 right-20 w-64 h-64 bg-white rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 left-20 w-96 h-96 bg-blue-300 rounded-full blur-3xl"></div>
+        </div>
+
+        <div className="max-w-7xl mx-auto py-20 px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
-            <h1 className="text-4xl font-bold mb-4">Our Services</h1>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-              Comprehensive solutions for procurement, logistics, construction,
-              and technical services. Delivering quality, efficiency & trust.
+            <span className="inline-block px-4 py-2 bg-white/10 backdrop-blur-md text-blue-100 rounded-full text-sm font-semibold mb-6 border border-white/20">
+              What We Do
+            </span>
+            <h1 className="text-5xl md:text-6xl font-bold mb-6">Our Services</h1>
+            <p className="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
+              Comprehensive solutions for branding, procurement, logistics, and
+              business growth. Delivering quality, efficiency & trust.
             </p>
           </div>
         </div>
+
+        {/* Curved Bottom */}
+        <div className="absolute bottom-0 left-0 right-0 z-0">
+          <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-auto">
+            <path d="M0 0L60 8C120 16 240 32 360 42.7C480 53 600 59 720 56C840 53 960 43 1080 42.7C1200 43 1320 53 1380 58.7L1440 64V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0V0Z" fill="#f9fafb"/>
+          </svg>
+        </div>
       </div>
 
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
         {/* Category Filter */}
-        <div className="mb-8">
-          <div className="flex flex-wrap gap-2 justify-center">
+        <div className="mb-12">
+          <div className="flex flex-wrap gap-3 justify-center">
             {categories.map((category) => (
               <button
                 key={category.id}
                 onClick={() => setSelectedCategory(category.id)}
-                className={`px-6 py-2 rounded-full font-medium transition-colors ${
+                className={`px-6 py-3 rounded-xl font-semibold transition-all duration-300 ${
                   selectedCategory === category.id
-                    ? 'bg-blue-600 text-white'
-                    : 'bg-white text-gray-700 hover:bg-gray-100'
-                } shadow-sm`}
+                    ? 'bg-[#1E90FF] text-white shadow-lg scale-105'
+                    : 'bg-white text-gray-700 hover:bg-gray-50 border-2 border-gray-200 hover:border-[#1E90FF]/30'
+                }`}
               >
                 {category.name}
               </button>
@@ -148,29 +164,39 @@ const Services = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {filteredServices.map((service) => (
             <div
               key={service.id}
-              className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+              className="group bg-white rounded-2xl border-2 border-gray-100 hover:border-[#1E90FF]/30 overflow-hidden hover:shadow-xl transition-all duration-300"
             >
-              <div className={`${service.color} p-6 text-center`}>
-                <div className="text-6xl mb-3">{service.icon}</div>
-                <h3 className="text-xl font-bold text-white">
-                  {service.title}
-                </h3>
+              {/* Header with gradient */}
+              <div className={`bg-gradient-to-br ${service.color} p-8 text-center relative overflow-hidden`}>
+                <div className="absolute inset-0 bg-black/10"></div>
+                <div className="relative z-10">
+                  <div className="text-6xl mb-3 transform group-hover:scale-110 transition-transform duration-300">
+                    {service.icon}
+                  </div>
+                  <h3 className="text-2xl font-bold text-white">
+                    {service.title}
+                  </h3>
+                </div>
               </div>
+
+              {/* Content */}
               <div className="p-6">
-                <p className="text-gray-600 mb-4">{service.description}</p>
+                <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
+
+                {/* Features */}
                 <div className="mb-6">
-                  <h4 className="font-semibold text-gray-900 mb-2">
-                    Key Features:
+                  <h4 className="font-semibold text-gray-900 mb-3 text-sm uppercase tracking-wide">
+                    Key Features
                   </h4>
                   <ul className="space-y-2">
                     {service.features.map((feature, index) => (
                       <li key={index} className="flex items-start">
                         <svg
-                          className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5"
+                          className="h-5 w-5 text-[#1E90FF] mr-3 flex-shrink-0 mt-0.5"
                           fill="none"
                           stroke="currentColor"
                           viewBox="0 0 24 24"
@@ -187,11 +213,13 @@ const Services = () => {
                     ))}
                   </ul>
                 </div>
+
+                {/* CTA Button */}
                 <Link
                   to={`/request-quote?service=${service.id}`}
-                  className="block w-full text-center bg-blue-600 text-white py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors"
+                  className="block w-full text-center bg-[#1E90FF] text-white py-3 rounded-xl font-semibold hover:bg-[#0077CC] transition-all duration-300 hover:scale-105 shadow-md hover:shadow-lg"
                 >
-                  Request Quote
+                  Request Quote →
                 </Link>
               </div>
             </div>
@@ -199,82 +227,67 @@ const Services = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="mt-16 bg-blue-900 rounded-lg shadow-xl overflow-hidden">
+        <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl border-2 border-gray-200 overflow-hidden">
           <div className="px-6 py-12 sm:px-12 text-center">
-            <h2 className="text-3xl font-bold text-white mb-4">
-              Can't find what you're looking for?
-            </h2>
-            <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-              We offer customized solutions for unique requirements. Contact us
-              to discuss your specific needs.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/contact"
-                className="bg-white text-blue-900 px-8 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
-              >
-                Contact Us
-              </Link>
-              <Link
-                to="/request-quote"
-                className="bg-blue-700 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-600 transition-colors border border-blue-500"
-              >
-                Request Custom Quote
-              </Link>
+            <div className="max-w-3xl mx-auto">
+              <span className="inline-block px-4 py-2 bg-blue-50 text-[#1E90FF] rounded-full text-sm font-semibold mb-4">
+                Custom Solutions
+              </span>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Can't find what you're looking for?
+              </h2>
+              <p className="text-lg text-gray-600 mb-8">
+                We offer customized solutions for unique requirements. Contact us
+                to discuss your specific needs.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link
+                  to="/contact"
+                  className="bg-[#1E90FF] text-white px-8 py-4 rounded-xl font-semibold hover:bg-[#0077CC] transition-all duration-300 hover:scale-105 shadow-lg"
+                >
+                  Contact Us
+                </Link>
+                <Link
+                  to="/request-quote"
+                  className="bg-white text-[#1E90FF] border-2 border-[#1E90FF] px-8 py-4 rounded-xl font-semibold hover:bg-blue-50 transition-all duration-300"
+                >
+                  Request Custom Quote
+                </Link>
+              </div>
             </div>
           </div>
         </div>
 
         {/* Why Choose Us */}
         <div className="mt-16">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
-            Why Choose ESKAL EIGHT SERVICES?
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl">✓</span>
+          <div className="text-center mb-12">
+            <span className="inline-block px-4 py-2 bg-blue-50 text-[#1E90FF] rounded-full text-sm font-semibold mb-4">
+              Our Advantages
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+              Why Choose ESKAL EIGHT SERVICES?
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { icon: '✓', bg: 'bg-blue-50', title: 'Quality Assurance', desc: 'Certified professionals and quality materials' },
+              { icon: '⚡', bg: 'bg-green-50', title: 'Fast Delivery', desc: 'Timely execution and on-schedule completion' },
+              { icon: '💯', bg: 'bg-purple-50', title: 'Competitive Pricing', desc: 'Transparent quotes and value for money' },
+              { icon: '🤝', bg: 'bg-orange-50', title: '24/7 Support', desc: 'Dedicated customer support team' },
+            ].map((item, index) => (
+              <div key={index} className="bg-white rounded-2xl p-6 border-2 border-gray-100 hover:border-[#1E90FF]/30 hover:shadow-lg transition-all duration-300 group">
+                <div className={`${item.bg} rounded-xl w-14 h-14 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                  <span className="text-3xl">{item.icon}</span>
+                </div>
+                <h3 className="font-bold text-gray-900 mb-2 text-lg group-hover:text-[#1E90FF] transition-colors">
+                  {item.title}
+                </h3>
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  {item.desc}
+                </p>
               </div>
-              <h3 className="font-semibold text-gray-900 mb-2">
-                Quality Assurance
-              </h3>
-              <p className="text-sm text-gray-600">
-                Certified professionals and quality materials
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl">⚡</span>
-              </div>
-              <h3 className="font-semibold text-gray-900 mb-2">
-                Fast Delivery
-              </h3>
-              <p className="text-sm text-gray-600">
-                Timely execution and on-schedule completion
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl">💯</span>
-              </div>
-              <h3 className="font-semibold text-gray-900 mb-2">
-                Competitive Pricing
-              </h3>
-              <p className="text-sm text-gray-600">
-                Transparent quotes and value for money
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="bg-orange-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl">🤝</span>
-              </div>
-              <h3 className="font-semibold text-gray-900 mb-2">
-                24/7 Support
-              </h3>
-              <p className="text-sm text-gray-600">
-                Dedicated customer support team
-              </p>
-            </div>
+            ))}
           </div>
         </div>
       </div>

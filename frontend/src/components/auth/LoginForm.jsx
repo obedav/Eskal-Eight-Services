@@ -79,23 +79,26 @@ const LoginForm = () => {
 
   return (
     <div className="w-full max-w-md mx-auto">
-      <div className="bg-white shadow-lg rounded-lg p-8">
-        <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold text-gray-800">Welcome Back</h2>
-          <p className="text-gray-600 mt-2">Login to your account</p>
+      <div className="bg-white rounded-2xl border-2 border-gray-100 p-8 md:p-10 hover:shadow-lg transition-all duration-300">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl font-bold text-gray-900 mb-2">Welcome Back</h2>
+          <p className="text-gray-600">Login to your account to continue</p>
         </div>
 
         {errors.general && (
-          <div className="mb-4 p-4 bg-red-50 border border-red-200 text-red-600 rounded-md">
-            {errors.general}
+          <div className="mb-6 p-5 bg-red-50 border-2 border-red-200 text-red-700 rounded-xl flex items-start">
+            <svg className="w-6 h-6 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span>{errors.general}</span>
           </div>
         )}
 
         <form onSubmit={handleSubmit}>
-          <div className="mb-4">
+          <div className="mb-6">
             <label
               htmlFor="email"
-              className="block text-gray-700 font-medium mb-2"
+              className="block text-sm font-semibold text-gray-900 mb-3"
             >
               Email Address
             </label>
@@ -105,22 +108,27 @@ const LoginForm = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 ${
+              className={`w-full px-5 py-3.5 border-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#1E90FF]/20 transition-all duration-300 hover:border-gray-300 ${
                 errors.email
-                  ? 'border-red-500 focus:ring-red-500'
-                  : 'border-gray-300 focus:ring-blue-500'
+                  ? 'border-red-300 focus:border-red-500'
+                  : 'border-gray-200 focus:border-[#1E90FF]'
               }`}
-              placeholder="Enter your email"
+              placeholder="you@example.com"
             />
             {errors.email && (
-              <p className="text-red-500 text-sm mt-1">{errors.email}</p>
+              <p className="text-red-600 text-sm mt-2 flex items-center">
+                <svg className="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
+                </svg>
+                {errors.email}
+              </p>
             )}
           </div>
 
-          <div className="mb-4">
+          <div className="mb-6">
             <label
               htmlFor="password"
-              className="block text-gray-700 font-medium mb-2"
+              className="block text-sm font-semibold text-gray-900 mb-3"
             >
               Password
             </label>
@@ -131,21 +139,21 @@ const LoginForm = () => {
                 name="password"
                 value={formData.password}
                 onChange={handleChange}
-                className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 ${
+                className={`w-full px-5 py-3.5 border-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#1E90FF]/20 transition-all duration-300 hover:border-gray-300 pr-12 ${
                   errors.password
-                    ? 'border-red-500 focus:ring-red-500'
-                    : 'border-gray-300 focus:ring-blue-500'
+                    ? 'border-red-300 focus:border-red-500'
+                    : 'border-gray-200 focus:border-[#1E90FF]'
                 }`}
                 placeholder="Enter your password"
               />
               <button
                 type="button"
                 onClick={() => setShowPassword(!showPassword)}
-                className="absolute right-3 top-3 text-gray-500 hover:text-gray-700"
+                className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 transition-colors"
               >
                 {showPassword ? (
                   <svg
-                    className="w-6 h-6"
+                    className="w-5 h-5"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -159,7 +167,7 @@ const LoginForm = () => {
                   </svg>
                 ) : (
                   <svg
-                    className="w-6 h-6"
+                    className="w-5 h-5"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -181,24 +189,29 @@ const LoginForm = () => {
               </button>
             </div>
             {errors.password && (
-              <p className="text-red-500 text-sm mt-1">{errors.password}</p>
+              <p className="text-red-600 text-sm mt-2 flex items-center">
+                <svg className="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
+                </svg>
+                {errors.password}
+              </p>
             )}
           </div>
 
-          <div className="flex items-center justify-between mb-6">
+          <div className="flex items-center justify-between mb-8">
             <div className="flex items-center">
               <input
                 type="checkbox"
                 id="remember"
-                className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+                className="h-4 w-4 text-[#1E90FF] focus:ring-[#1E90FF] border-gray-300 rounded transition-colors"
               />
-              <label htmlFor="remember" className="ml-2 text-sm text-gray-700">
+              <label htmlFor="remember" className="ml-3 text-sm font-medium text-gray-700 cursor-pointer">
                 Remember me
               </label>
             </div>
             <Link
               to="/forgot-password"
-              className="text-sm text-blue-600 hover:text-blue-800"
+              className="text-sm font-medium text-[#1E90FF] hover:text-[#0077CC] transition-colors"
             >
               Forgot password?
             </Link>
@@ -207,7 +220,7 @@ const LoginForm = () => {
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-blue-600 text-white py-3 rounded-lg font-medium hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full bg-[#1E90FF] text-white py-4 rounded-xl font-semibold hover:bg-[#0077CC] focus:outline-none focus:ring-2 focus:ring-[#1E90FF] focus:ring-offset-2 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
           >
             {loading ? (
               <span className="flex items-center justify-center">
@@ -234,17 +247,17 @@ const LoginForm = () => {
                 Logging in...
               </span>
             ) : (
-              'Login'
+              'Login →'
             )}
           </button>
         </form>
 
-        <div className="mt-6 text-center">
+        <div className="mt-8 text-center">
           <p className="text-gray-600">
             Don't have an account?{' '}
             <Link
               to="/register"
-              className="text-blue-600 hover:text-blue-800 font-medium"
+              className="text-[#1E90FF] hover:text-[#0077CC] font-semibold transition-colors"
             >
               Sign up
             </Link>

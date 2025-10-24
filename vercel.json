@@ -1,25 +1,6 @@
 {
   "version": 2,
   "name": "eskal-eight-services",
-  "builds": [
-    {
-      "src": "frontend/package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "build"
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/static/(.*)",
-      "dest": "/frontend/build/static/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/frontend/build/$1"
-    }
-  ],
   "buildCommand": "cd frontend && npm install && npm run build",
   "outputDirectory": "frontend/build",
   "installCommand": "cd frontend && npm install",
@@ -28,6 +9,25 @@
     {
       "source": "/(.*)",
       "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        }
+      ]
     }
   ]
 }
