@@ -423,5 +423,4 @@ This project is proprietary software owned by ESKAL EIGHT SERVICES.
 ---
 
 **Built with ❤️ by the ESKAL EIGHT SERVICES Development Team**
-#   E s k a l - E i g h t - S e r v i c e s  
- 
+#
