@@ -43,37 +43,31 @@ const Home = () => {
 
   const services = [
     {
-      icon: '🎨',
       title: 'Brand Management',
       description: 'Corporate identity and product branding solutions',
       image: brandingHomeImg,
     },
     {
-      icon: '📦',
       title: 'Procurement & Supplies',
       description: 'Quality materials and equipment sourcing',
       image: procurementHomeImg,
     },
     {
-      icon: '🚚',
       title: 'Logistics & Haulage',
       description: 'Efficient transportation services',
       image: logisticsHomeImg,
     },
     {
-      icon: '🖨️',
       title: 'Printing Services',
       description: 'Professional printing and customization',
       image: printingHomeImg,
     },
     {
-      icon: '💼',
       title: 'Consultancy',
       description: 'Expert brand and business consulting',
       image: consultancyHomeImg,
     },
     {
-      icon: '🎁',
       title: 'Corporate Gifting',
       description: 'Premium branded corporate gifts',
       image: giftingHomeImg,
@@ -273,14 +267,15 @@ const Home = () => {
                   {/* Gradient Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
 
-                  {/* Icon Badge */}
-                  <div className="absolute top-4 right-4 w-14 h-14 bg-white/90 backdrop-blur-sm rounded-xl flex items-center justify-center shadow-lg">
-                    <span className="text-3xl">{service.icon}</span>
+                  {/* Decorative Corner Element */}
+                  <div className="absolute top-0 right-0">
+                    <div className="w-20 h-20 bg-gradient-to-br from-[#1E90FF]/20 to-transparent rounded-bl-3xl"></div>
                   </div>
 
                   {/* Title on Image */}
                   <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <h3 className="text-2xl font-bold text-white mb-2 drop-shadow-lg">
+                    <div className="w-12 h-1 bg-[#1E90FF] rounded-full mb-3"></div>
+                    <h3 className="text-2xl font-bold text-white drop-shadow-lg">
                       {service.title}
                     </h3>
                   </div>
@@ -335,15 +330,20 @@ const Home = () => {
           {/* Features Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: '✓', color: 'from-blue-500 to-blue-600', bgColor: 'bg-blue-50', title: 'Quality Assurance', desc: 'Certified professionals and premium materials' },
-              { icon: '⚡', color: 'from-green-500 to-green-600', bgColor: 'bg-green-50', title: 'Fast Delivery', desc: 'On-time execution and timely completion' },
-              { icon: '💯', color: 'from-purple-500 to-purple-600', bgColor: 'bg-purple-50', title: 'Competitive Pricing', desc: 'Transparent quotes and value for money' },
-              { icon: '🤝', color: 'from-orange-500 to-orange-600', bgColor: 'bg-orange-50', title: '24/7 Support', desc: 'Dedicated customer support team' },
+              { color: 'from-blue-500 to-blue-600', bgColor: 'bg-blue-50', title: 'Quality Assurance', desc: 'Certified professionals and premium materials' },
+              { color: 'from-green-500 to-green-600', bgColor: 'bg-green-50', title: 'Fast Delivery', desc: 'On-time execution and timely completion' },
+              { color: 'from-purple-500 to-purple-600', bgColor: 'bg-purple-50', title: 'Competitive Pricing', desc: 'Transparent quotes and value for money' },
+              { color: 'from-orange-500 to-orange-600', bgColor: 'bg-orange-50', title: '24/7 Support', desc: 'Dedicated customer support team' },
             ].map((item, index) => (
-              <div key={index} className="group bg-white rounded-2xl p-8 border-2 border-gray-100 hover:border-[#1E90FF]/30 hover:shadow-lg transition-all duration-300">
-                {/* Icon */}
-                <div className={`w-14 h-14 ${item.bgColor} rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                  <span className="text-3xl">{item.icon}</span>
+              <div key={index} className="group bg-white rounded-2xl p-8 border-2 border-gray-100 hover:border-[#1E90FF]/30 hover:shadow-lg transition-all duration-300 relative overflow-hidden">
+                {/* Gradient Accent */}
+                <div className={`absolute top-0 left-0 w-1 h-full bg-gradient-to-b ${item.color}`}></div>
+
+                {/* Number Badge */}
+                <div className="mb-6">
+                  <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${item.color} flex items-center justify-center shadow-md`}>
+                    <span className="text-white font-bold text-xl">{String(index + 1).padStart(2, '0')}</span>
+                  </div>
                 </div>
 
                 {/* Content */}
@@ -353,6 +353,11 @@ const Home = () => {
                 <p className="text-gray-600 leading-relaxed text-sm">
                   {item.desc}
                 </p>
+
+                {/* Decorative Element */}
+                <div className="absolute bottom-4 right-4 opacity-10">
+                  <div className={`w-20 h-20 rounded-full bg-gradient-to-br ${item.color}`}></div>
+                </div>
               </div>
             ))}
           </div>
@@ -405,14 +410,26 @@ const Home = () => {
           {/* Trust Badges */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { icon: '⭐', number: '50+', label: 'Corporate Clients' },
-              { icon: '🎨', number: '1000+', label: 'Products Branded' },
-              { icon: '🤝', number: '98%', label: 'Client Satisfaction' },
+              { number: '50+', label: 'Corporate Clients', color: 'from-blue-500 to-blue-600' },
+              { number: '1000+', label: 'Products Branded', color: 'from-purple-500 to-purple-600' },
+              { number: '98%', label: 'Client Satisfaction', color: 'from-green-500 to-green-600' },
             ].map((badge, index) => (
-              <div key={index} className="text-center p-8 bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-2xl hover:shadow-lg transition-all duration-300">
-                <div className="text-5xl mb-4">{badge.icon}</div>
-                <h3 className="text-4xl font-bold text-[#1E90FF] mb-2">{badge.number}</h3>
-                <p className="text-gray-600">{badge.label}</p>
+              <div key={index} className="group relative text-center p-8 bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-2xl hover:border-[#1E90FF]/30 hover:shadow-xl transition-all duration-300 overflow-hidden">
+                {/* Decorative top accent */}
+                <div className={`absolute top-0 left-0 right-0 h-2 bg-gradient-to-r ${badge.color}`}></div>
+
+                {/* Number */}
+                <div className="relative z-10">
+                  <h3 className={`text-5xl md:text-6xl font-bold bg-gradient-to-r ${badge.color} bg-clip-text text-transparent mb-3`}>
+                    {badge.number}
+                  </h3>
+                  <p className="text-gray-600 font-medium">{badge.label}</p>
+                </div>
+
+                {/* Decorative background element */}
+                <div className="absolute -bottom-10 -right-10 opacity-5 group-hover:opacity-10 transition-opacity">
+                  <div className={`w-40 h-40 rounded-full bg-gradient-to-br ${badge.color}`}></div>
+                </div>
               </div>
             ))}
           </div>

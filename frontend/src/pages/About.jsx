@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 
 const About = () => {
   const values = [
-    { icon: '💪', title: 'Commitment', description: 'Dedicated to delivering on our promises with unwavering focus in every project.' },
-    { icon: '🎯', title: 'Customer Value', description: 'Putting clients first, ensuring every solution adds real value to their success.' },
-    { icon: '🤝', title: 'Teamwork', description: 'Collaborative approach to achieve exceptional results together.' },
-    { icon: '👔', title: 'Professionalism', description: 'Maintaining highest standards of business conduct and service excellence.' },
-    { icon: '🔄', title: 'Adaptability', description: 'Adapting to changing business needs with agile, innovative solutions.' },
-    { icon: '🌍', title: 'Social Responsibility', description: 'Contributing positively to society with ethical business practices.' },
+    { title: 'Commitment', description: 'Dedicated to delivering on our promises with unwavering focus in every project.', color: 'from-blue-500 to-blue-600', bg: 'bg-blue-50' },
+    { title: 'Customer Value', description: 'Putting clients first, ensuring every solution adds real value to their success.', color: 'from-purple-500 to-purple-600', bg: 'bg-purple-50' },
+    { title: 'Teamwork', description: 'Collaborative approach to achieve exceptional results together.', color: 'from-green-500 to-green-600', bg: 'bg-green-50' },
+    { title: 'Professionalism', description: 'Maintaining highest standards of business conduct and service excellence.', color: 'from-indigo-500 to-indigo-600', bg: 'bg-indigo-50' },
+    { title: 'Adaptability', description: 'Adapting to changing business needs with agile, innovative solutions.', color: 'from-orange-500 to-orange-600', bg: 'bg-orange-50' },
+    { title: 'Social Responsibility', description: 'Contributing positively to society with ethical business practices.', color: 'from-pink-500 to-pink-600', bg: 'bg-pink-50' },
   ];
 
   const milestones = [
@@ -100,20 +100,48 @@ const About = () => {
       <div className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-10 border-2 border-blue-200">
-              <div className="text-6xl mb-6">🎯</div>
+            <div className="relative bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-10 border-2 border-blue-200 overflow-hidden group">
+              {/* Gradient accent */}
+              <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-blue-500 to-blue-600"></div>
+
+              {/* Number badge */}
+              <div className="mb-6">
+                <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center shadow-lg">
+                  <span className="text-white font-bold text-2xl">01</span>
+                </div>
+              </div>
+
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
               <p className="text-gray-700 leading-relaxed">
                 "To help customers build a reliable, secure, and flexible branding foundation that enables them to achieve their business objectives."
               </p>
+
+              {/* Decorative element */}
+              <div className="absolute -bottom-10 -right-10 opacity-10">
+                <div className="w-40 h-40 rounded-full bg-gradient-to-br from-blue-500 to-blue-600"></div>
+              </div>
             </div>
 
-            <div className="bg-gradient-to-br from-purple-50 to-pink-100 rounded-2xl p-10 border-2 border-purple-200">
-              <div className="text-6xl mb-6">🔭</div>
+            <div className="relative bg-gradient-to-br from-purple-50 to-pink-100 rounded-2xl p-10 border-2 border-purple-200 overflow-hidden group">
+              {/* Gradient accent */}
+              <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-purple-500 to-pink-600"></div>
+
+              {/* Number badge */}
+              <div className="mb-6">
+                <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center shadow-lg">
+                  <span className="text-white font-bold text-2xl">02</span>
+                </div>
+              </div>
+
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
               <p className="text-gray-700 leading-relaxed">
                 To be Nigeria's leading branding and promotional solutions provider, recognized for quality, innovation, and customer-centric approach.
               </p>
+
+              {/* Decorative element */}
+              <div className="absolute -bottom-10 -right-10 opacity-10">
+                <div className="w-40 h-40 rounded-full bg-gradient-to-br from-purple-500 to-pink-600"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -135,13 +163,27 @@ const About = () => {
           {values.map((value, index) => (
             <div
               key={index}
-              className="bg-white p-8 rounded-2xl border-2 border-gray-100 hover:border-[#1E90FF]/30 hover:shadow-lg transition-all duration-300 group"
+              className="relative bg-white p-8 rounded-2xl border-2 border-gray-100 hover:border-[#1E90FF]/30 hover:shadow-lg transition-all duration-300 group overflow-hidden"
             >
-              <div className="text-5xl mb-4 group-hover:scale-110 transition-transform">{value.icon}</div>
+              {/* Gradient Accent Bar */}
+              <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${value.color}`}></div>
+
+              {/* Number Badge */}
+              <div className="mb-6">
+                <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${value.color} flex items-center justify-center shadow-md`}>
+                  <span className="text-white font-bold text-xl">{String(index + 1).padStart(2, '0')}</span>
+                </div>
+              </div>
+
               <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#1E90FF] transition-colors">
                 {value.title}
               </h3>
               <p className="text-gray-600 leading-relaxed">{value.description}</p>
+
+              {/* Decorative background element */}
+              <div className="absolute -bottom-8 -right-8 opacity-5">
+                <div className={`w-28 h-28 rounded-full bg-gradient-to-br ${value.color}`}></div>
+              </div>
             </div>
           ))}
         </div>
@@ -191,18 +233,30 @@ const About = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { icon: '🚀', bg: 'bg-blue-50', title: 'Cutting-Edge Technology', desc: 'Modern branding technologies for efficiency and quality' },
-              { icon: '🌏', bg: 'bg-green-50', title: 'Global Reach', desc: 'Expanded to China with Taichangqing Trading Company' },
-              { icon: '⚡', bg: 'bg-purple-50', title: 'Fast Turnaround', desc: 'Unequalled turnaround through reliable partnerships' },
+              { bg: 'bg-blue-50', title: 'Cutting-Edge Technology', desc: 'Modern branding technologies for efficiency and quality', color: 'from-blue-500 to-blue-600' },
+              { bg: 'bg-green-50', title: 'Global Reach', desc: 'Expanded to China with Taichangqing Trading Company', color: 'from-green-500 to-green-600' },
+              { bg: 'bg-purple-50', title: 'Fast Turnaround', desc: 'Unequalled turnaround through reliable partnerships', color: 'from-purple-500 to-purple-600' },
             ].map((item, index) => (
-              <div key={index} className="bg-white p-8 rounded-2xl border-2 border-gray-100 hover:border-[#1E90FF]/30 hover:shadow-lg transition-all duration-300 text-center group">
-                <div className={`w-16 h-16 ${item.bg} rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform`}>
-                  <span className="text-4xl">{item.icon}</span>
+              <div key={index} className="relative bg-white p-8 rounded-2xl border-2 border-gray-100 hover:border-[#1E90FF]/30 hover:shadow-lg transition-all duration-300 text-center group overflow-hidden">
+                {/* Gradient accent */}
+                <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${item.color}`}></div>
+
+                {/* Number badge */}
+                <div className="mb-6 flex justify-center">
+                  <div className={`w-16 h-16 rounded-xl bg-gradient-to-br ${item.color} flex items-center justify-center group-hover:scale-110 transition-transform shadow-md`}>
+                    <span className="text-white font-bold text-2xl">{String(index + 1).padStart(2, '0')}</span>
+                  </div>
                 </div>
+
                 <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#1E90FF] transition-colors">
                   {item.title}
                 </h3>
                 <p className="text-gray-600 leading-relaxed">{item.desc}</p>
+
+                {/* Decorative background element */}
+                <div className="absolute -bottom-8 -right-8 opacity-5">
+                  <div className={`w-28 h-28 rounded-full bg-gradient-to-br ${item.color}`}></div>
+                </div>
               </div>
             ))}
           </div>

@@ -22,7 +22,6 @@ const Services = () => {
       title: 'Brand Management',
       category: 'branding',
       description: 'Corporate identity development and comprehensive branding solutions.',
-      icon: '🎨',
       image: brandingImg,
       features: [
         'Corporate Branding',
@@ -40,7 +39,6 @@ const Services = () => {
       title: 'POSM & Advertising',
       category: 'posm',
       description: 'Point of Sale Materials and advertising solutions to boost your brand visibility.',
-      icon: '📢',
       image: posmImg,
       features: [
         'Point of Sale Materials',
@@ -57,7 +55,6 @@ const Services = () => {
       title: 'Corporate Uniforms & Apparel',
       category: 'uniforms',
       description: 'Professional uniform production and branded apparel for all industries.',
-      icon: '👔',
       image: uniformsImg,
       features: [
         'Corporate Uniforms',
@@ -74,7 +71,6 @@ const Services = () => {
       title: 'Safety & Security Equipment',
       category: 'safety',
       description: 'Personal Protective Equipment (PPE) and security kits for workplace safety.',
-      icon: '🦺',
       image: safetyImg,
       features: [
         'Safety Helmets & Jackets',
@@ -91,7 +87,6 @@ const Services = () => {
       title: 'Procurement & Supplies',
       category: 'procurement',
       description: 'Sourcing and delivering goods, materials, and equipment for various industries.',
-      icon: '📦',
       image: flaskBrandingImg,
       features: [
         'Office Equipment',
@@ -108,7 +103,6 @@ const Services = () => {
       title: 'Logistics, Imports & Exports',
       category: 'logistics',
       description: 'Comprehensive logistics, clearing, and international trade services.',
-      icon: '🚚',
       image: importsImg,
       features: [
         'Local & Interstate Delivery',
@@ -125,7 +119,6 @@ const Services = () => {
       title: 'Printing Services',
       category: 'printing',
       description: 'Professional printing and customization services for all your branding needs.',
-      icon: '🖨️',
       image: designImg,
       features: [
         'Large Format Printing',
@@ -142,7 +135,6 @@ const Services = () => {
       title: 'Consultancy',
       category: 'consultancy',
       description: 'Expert advisory services for brand development and business growth.',
-      icon: '💼',
       image: clothBrandingImg,
       features: [
         'Brand Strategy',
@@ -159,7 +151,6 @@ const Services = () => {
       title: 'Corporate Gifting',
       category: 'gifting',
       description: 'Premium branded corporate gifts and promotional merchandise.',
-      icon: '🎁',
       image: waistBagImg,
       features: [
         'Custom Gift Items',
@@ -254,10 +245,23 @@ const Services = () => {
                 <img
                   src={service.image}
                   alt={service.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
-                <div className="absolute bottom-0 left-0 right-0 p-6 text-center z-10">
+                {/* Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+
+                {/* Colored Accent Bar */}
+                <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${service.color}`}></div>
+
+                {/* Service Number Badge */}
+                <div className="absolute top-4 left-4">
+                  <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${service.color} flex items-center justify-center shadow-lg`}>
+                    <span className="text-white font-bold text-lg">{String(service.id).padStart(2, '0')}</span>
+                  </div>
+                </div>
+
+                {/* Title */}
+                <div className="absolute bottom-0 left-0 right-0 p-6">
                   <h3 className="text-2xl font-bold text-white drop-shadow-lg">
                     {service.title}
                   </h3>
@@ -352,21 +356,35 @@ const Services = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: '✓', bg: 'bg-blue-50', title: 'Quality Assurance', desc: 'Certified professionals and quality materials' },
-              { icon: '⚡', bg: 'bg-green-50', title: 'Fast Delivery', desc: 'Timely execution and on-schedule completion' },
-              { icon: '💯', bg: 'bg-purple-50', title: 'Competitive Pricing', desc: 'Transparent quotes and value for money' },
-              { icon: '🤝', bg: 'bg-orange-50', title: '24/7 Support', desc: 'Dedicated customer support team' },
+              { bg: 'bg-blue-50', title: 'Quality Assurance', desc: 'Certified professionals and quality materials', color: 'from-blue-500 to-blue-600' },
+              { bg: 'bg-green-50', title: 'Fast Delivery', desc: 'Timely execution and on-schedule completion', color: 'from-green-500 to-green-600' },
+              { bg: 'bg-purple-50', title: 'Competitive Pricing', desc: 'Transparent quotes and value for money', color: 'from-purple-500 to-purple-600' },
+              { bg: 'bg-orange-50', title: '24/7 Support', desc: 'Dedicated customer support team', color: 'from-orange-500 to-orange-600' },
             ].map((item, index) => (
-              <div key={index} className="bg-white rounded-2xl p-6 border-2 border-gray-100 hover:border-[#1E90FF]/30 hover:shadow-lg transition-all duration-300 group">
-                <div className={`${item.bg} rounded-xl w-14 h-14 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                  <span className="text-3xl">{item.icon}</span>
+              <div key={index} className="relative bg-white rounded-2xl p-6 border-2 border-gray-100 hover:border-[#1E90FF]/30 hover:shadow-lg transition-all duration-300 group overflow-hidden">
+                {/* Gradient Accent */}
+                <div className={`absolute top-0 left-0 w-full h-1 bg-gradient-to-r ${item.color}`}></div>
+
+                {/* Number Badge */}
+                <div className="mb-4">
+                  <div className={`${item.bg} rounded-xl w-14 h-14 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-sm`}>
+                    <span className={`text-2xl font-bold bg-gradient-to-r ${item.color} bg-clip-text text-transparent`}>
+                      {String(index + 1).padStart(2, '0')}
+                    </span>
+                  </div>
                 </div>
+
                 <h3 className="font-bold text-gray-900 mb-2 text-lg group-hover:text-[#1E90FF] transition-colors">
                   {item.title}
                 </h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
                   {item.desc}
                 </p>
+
+                {/* Decorative background */}
+                <div className="absolute -bottom-6 -right-6 opacity-5">
+                  <div className={`w-24 h-24 rounded-full bg-gradient-to-br ${item.color}`}></div>
+                </div>
               </div>
             ))}
           </div>
