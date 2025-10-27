@@ -1,5 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, Suspense } from 'react';
 import { Link } from 'react-router-dom';
+import LoadingFallback from '../components/3d/LoadingFallback';
+import ViewToggle from '../components/3d/ViewToggle';
 
 // Import client logos
 import fmnLogo from '../assets/images/services/Clients/fmn.png';
@@ -21,8 +23,12 @@ import printingHomeImg from '../assets/images/services/design1.jpg';
 import consultancyHomeImg from '../assets/images/services/polo-shirt.jpg';
 import giftingHomeImg from '../assets/images/services/product-advert1.jpg';
 
+// Lazy load 3D Hero component for better performance
+const Hero3D = React.lazy(() => import('../components/3d/Hero3D'));
+
 const Home = () => {
   const [isVisible, setIsVisible] = useState({});
+  const [is3DView, setIs3DView] = useState(true); // Toggle between 2D and 3D
 
   useEffect(() => {
     // Trigger animations on scroll
@@ -76,8 +82,16 @@ const Home = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section - Stripe/Deel Style with Curved Shape */}
-      <section className="hero-gradient text-white overflow-hidden relative pb-20">
+      {/* View Toggle Button */}
+      <ViewToggle is3D={is3DView} onToggle={() => setIs3DView(!is3DView)} />
+
+      {/* Conditional Rendering: 3D or 2D Hero */}
+      {is3DView ? (
+        <Suspense fallback={<LoadingFallback />}>
+          <Hero3D />
+        </Suspense>
+      ) : (
+        <section className="hero-gradient text-white overflow-hidden relative pb-20">
         {/* Animated Background Elements */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-10 w-72 h-72 bg-blue-500 rounded-full blur-3xl animate-float"></div>
@@ -232,6 +246,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      )}
 
       {/* Services Overview - Clean Grid */}
       <section className="py-24 bg-white" data-animate>
