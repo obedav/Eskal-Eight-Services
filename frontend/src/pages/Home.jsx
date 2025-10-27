@@ -1,6 +1,26 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
+// Import client logos
+import fmnLogo from '../assets/images/services/Clients/fmn.png';
+import fourPointsLogo from '../assets/images/services/Clients/four-points.png';
+import goldenLogo from '../assets/images/services/Clients/golden.jpg';
+import baggoLogo from '../assets/images/services/Clients/baggo.jpg';
+import macgregolLogo from '../assets/images/services/Clients/MacGregol.png';
+import ijewereLogo from '../assets/images/services/Clients/ijewere.jpg';
+import golden1Logo from '../assets/images/services/Clients/golden1.png';
+import lynEdgeLogo from '../assets/images/services/Clients/lyn-edge.png';
+import ascoLogo from '../assets/images/services/Clients/asco.jpg';
+import nrLogo from '../assets/images/services/Clients/NR.jpg';
+
+// Import service images (different from Services page)
+import brandingHomeImg from '../assets/images/services/image18.jpg';
+import procurementHomeImg from '../assets/images/services/GOLDEN-PENNY-PAPER-FOOD-PACK_034646.jpg';
+import logisticsHomeImg from '../assets/images/services/motor-branding.jpg';
+import printingHomeImg from '../assets/images/services/design1.jpg';
+import consultancyHomeImg from '../assets/images/services/polo-shirt.jpg';
+import giftingHomeImg from '../assets/images/services/product-advert1.jpg';
+
 const Home = () => {
   const [isVisible, setIsVisible] = useState({});
 
@@ -26,31 +46,37 @@ const Home = () => {
       icon: '🎨',
       title: 'Brand Management',
       description: 'Corporate identity and product branding solutions',
+      image: brandingHomeImg,
     },
     {
       icon: '📦',
       title: 'Procurement & Supplies',
       description: 'Quality materials and equipment sourcing',
+      image: procurementHomeImg,
     },
     {
       icon: '🚚',
       title: 'Logistics & Haulage',
       description: 'Efficient transportation services',
+      image: logisticsHomeImg,
     },
     {
       icon: '🖨️',
       title: 'Printing Services',
       description: 'Professional printing and customization',
+      image: printingHomeImg,
     },
     {
       icon: '💼',
       title: 'Consultancy',
       description: 'Expert brand and business consulting',
+      image: consultancyHomeImg,
     },
     {
       icon: '🎁',
       title: 'Corporate Gifting',
       description: 'Premium branded corporate gifts',
+      image: giftingHomeImg,
     },
   ];
 
@@ -230,46 +256,60 @@ const Home = () => {
           </div>
 
           {/* Services Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <Link
                 key={index}
                 to="/services"
-                className="group relative bg-white border-2 border-gray-100 rounded-2xl p-8 hover:border-[#1E90FF]/30 hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
               >
-                {/* Icon */}
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <span className="text-4xl">{service.icon}</span>
+                {/* Image Section */}
+                <div className="relative h-56 overflow-hidden">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                  />
+                  {/* Gradient Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+
+                  {/* Icon Badge */}
+                  <div className="absolute top-4 right-4 w-14 h-14 bg-white/90 backdrop-blur-sm rounded-xl flex items-center justify-center shadow-lg">
+                    <span className="text-3xl">{service.icon}</span>
+                  </div>
+
+                  {/* Title on Image */}
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h3 className="text-2xl font-bold text-white mb-2 drop-shadow-lg">
+                      {service.title}
+                    </h3>
+                  </div>
                 </div>
 
-                {/* Content */}
-                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#1E90FF] transition-colors">
-                  {service.title}
-                </h3>
-                <p className="text-gray-600 mb-4 leading-relaxed">
-                  {service.description}
-                </p>
+                {/* Content Section */}
+                <div className="p-6 bg-white">
+                  <p className="text-gray-600 mb-4 leading-relaxed">
+                    {service.description}
+                  </p>
 
-                {/* Arrow */}
-                <div className="flex items-center text-[#1E90FF] font-semibold text-sm">
-                  <span>Learn more</span>
-                  <svg
-                    className="w-4 h-4 ml-2 transform group-hover:translate-x-2 transition-transform"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M13 7l5 5m0 0l-5 5m5-5H6"
-                    />
-                  </svg>
+                  {/* Arrow */}
+                  <div className="flex items-center text-[#1E90FF] font-semibold text-sm group-hover:gap-3 transition-all duration-300">
+                    <span>Learn more</span>
+                    <svg
+                      className="w-4 h-4 transform group-hover:translate-x-2 transition-transform"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M13 7l5 5m0 0l-5 5m5-5H6"
+                      />
+                    </svg>
+                  </div>
                 </div>
-
-                {/* Hover gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-br from-[#1E90FF]/0 to-[#1E90FF]/0 group-hover:from-[#1E90FF]/5 group-hover:to-transparent rounded-2xl transition-all duration-300 pointer-events-none"></div>
               </Link>
             ))}
           </div>
@@ -338,23 +378,26 @@ const Home = () => {
           {/* Client Logos Grid */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-16">
             {[
-              { icon: '🏭', name: 'FMN' },
-              { icon: '🏨', name: 'Sheraton' },
-              { icon: '🌾', name: 'Golden Penny' },
-              { icon: '🏢', name: 'BAGCO' },
-              { icon: '🛡️', name: 'MacGREGOL' },
-              { icon: '📊', name: 'Ijewere & Co' },
-              { icon: '🏭', name: 'Golden Sukh' },
-              { icon: '💊', name: 'Lyn-Edge' },
-              { icon: '🔒', name: 'ASCO' },
-              { icon: '🏢', name: 'NR' },
+              { logo: fmnLogo, name: 'FMN' },
+              { logo: fourPointsLogo, name: 'Four Points' },
+              { logo: goldenLogo, name: 'Golden Penny' },
+              { logo: baggoLogo, name: 'BAGCO' },
+              { logo: macgregolLogo, name: 'MacGREGOL' },
+              { logo: ijewereLogo, name: 'Ijewere & Co' },
+              { logo: golden1Logo, name: 'Golden Sukh' },
+              { logo: lynEdgeLogo, name: 'Lyn-Edge' },
+              { logo: ascoLogo, name: 'ASCO' },
+              { logo: nrLogo, name: 'NR' },
             ].map((client, index) => (
               <div
                 key={index}
-                className="bg-gray-50 border border-gray-200 rounded-xl flex flex-col items-center justify-center h-28 hover:bg-white hover:border-[#1E90FF]/30 hover:shadow-md transition-all duration-300 cursor-pointer group"
+                className="bg-gray-50 border border-gray-200 rounded-xl flex items-center justify-center p-4 h-28 hover:bg-white hover:border-[#1E90FF]/30 hover:shadow-md transition-all duration-300 cursor-pointer group"
               >
-                <div className="text-4xl mb-2 group-hover:scale-110 transition-transform duration-300">{client.icon}</div>
-                <p className="text-sm font-semibold text-gray-700">{client.name}</p>
+                <img
+                  src={client.logo}
+                  alt={client.name}
+                  className="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-300 filter grayscale group-hover:grayscale-0"
+                />
               </div>
             ))}
           </div>

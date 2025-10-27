@@ -1,6 +1,18 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+// Import service images
+import brandingImg from '../assets/images/services/branding.jpg';
+import vehicleBrandingImg from '../assets/images/services/vehicle-branding.jpg';
+import designImg from '../assets/images/services/design.jpg';
+import waistBagImg from '../assets/images/services/waist bag.png';
+import flaskBrandingImg from '../assets/images/services/flask-branding.jpg';
+import clothBrandingImg from '../assets/images/services/cloth-branding.jpg';
+import posmImg from '../assets/images/services/product-advert.jpg';
+import uniformsImg from '../assets/images/services/polo-shirt.jpg';
+import safetyImg from '../assets/images/services/overall-jacket.jpg';
+import importsImg from '../assets/images/services/vehicle-branding1.jpg';
+
 const Services = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
 
@@ -11,87 +23,151 @@ const Services = () => {
       category: 'branding',
       description: 'Corporate identity development and comprehensive branding solutions.',
       icon: '🎨',
+      image: brandingImg,
       features: [
         'Corporate Branding',
         'Product Customization',
         'Marketing Materials',
         'Brand Strategy',
         'Visual Identity Design',
+        'Flex, Flock & Sublimation',
+        'Screen Printing & Doming',
       ],
       color: 'from-purple-500 to-pink-600',
     },
     {
       id: 2,
+      title: 'POSM & Advertising',
+      category: 'posm',
+      description: 'Point of Sale Materials and advertising solutions to boost your brand visibility.',
+      icon: '📢',
+      image: posmImg,
+      features: [
+        'Point of Sale Materials',
+        'Advertising Materials',
+        'Product Mascots',
+        'Replica Inflatables',
+        'Cut-out Characters',
+        'Continuous & Non-continuous Blowing Products',
+      ],
+      color: 'from-red-500 to-orange-600',
+    },
+    {
+      id: 3,
+      title: 'Corporate Uniforms & Apparel',
+      category: 'uniforms',
+      description: 'Professional uniform production and branded apparel for all industries.',
+      icon: '👔',
+      image: uniformsImg,
+      features: [
+        'Corporate Uniforms',
+        'Jerseys & Coveralls',
+        'Lab Coats & Theater Gowns',
+        'Corporate Shirts & T-shirts',
+        'Polo Shirts & Round Necks',
+        'Hotel Beddings',
+      ],
+      color: 'from-cyan-500 to-blue-600',
+    },
+    {
+      id: 4,
+      title: 'Safety & Security Equipment',
+      category: 'safety',
+      description: 'Personal Protective Equipment (PPE) and security kits for workplace safety.',
+      icon: '🦺',
+      image: safetyImg,
+      features: [
+        'Safety Helmets & Jackets',
+        'Face Shields & Goggles',
+        'Safety Boots & Harnesses',
+        'Security Belts & Lanyards',
+        'Boots, Umbrellas & Torchlights',
+        'PPE Supplies',
+      ],
+      color: 'from-yellow-500 to-orange-600',
+    },
+    {
+      id: 5,
       title: 'Procurement & Supplies',
       category: 'procurement',
       description: 'Sourcing and delivering goods, materials, and equipment for various industries.',
       icon: '📦',
+      image: flaskBrandingImg,
       features: [
         'Office Equipment',
+        'Hotel Amenities Supply',
         'Branded Products',
-        'Safety Gear',
-        'Corporate Gifts',
+        'Bags, Carriers & Memo Pads',
+        'Jotters & Stationery',
         'IT Equipment',
       ],
       color: 'from-blue-500 to-blue-600',
     },
     {
-      id: 3,
-      title: 'Logistics & Haulage',
+      id: 6,
+      title: 'Logistics, Imports & Exports',
       category: 'logistics',
-      description: 'Professional transportation and fleet management services across Nigeria.',
+      description: 'Comprehensive logistics, clearing, and international trade services.',
       icon: '🚚',
+      image: importsImg,
       features: [
         'Local & Interstate Delivery',
         'Equipment Transport',
         'Fleet Management',
         'Warehousing',
-        'Real-time Tracking',
+        'Imports & Exports',
+        'Clearing Services',
       ],
       color: 'from-green-500 to-green-600',
     },
     {
-      id: 4,
+      id: 7,
       title: 'Printing Services',
       category: 'printing',
       description: 'Professional printing and customization services for all your branding needs.',
       icon: '🖨️',
+      image: designImg,
       features: [
         'Large Format Printing',
         'Product Branding',
         'Promotional Materials',
         'Banners & Signage',
         'Custom Packaging',
+        'Digital & Offset Printing',
       ],
       color: 'from-orange-500 to-red-600',
     },
     {
-      id: 5,
+      id: 8,
       title: 'Consultancy',
       category: 'consultancy',
       description: 'Expert advisory services for brand development and business growth.',
       icon: '💼',
+      image: clothBrandingImg,
       features: [
         'Brand Strategy',
         'Market Research',
         'Business Planning',
         'Brand Positioning',
         'Stakeholder Management',
+        'Business Development',
       ],
       color: 'from-indigo-500 to-purple-600',
     },
     {
-      id: 6,
+      id: 9,
       title: 'Corporate Gifting',
       category: 'gifting',
       description: 'Premium branded corporate gifts and promotional merchandise.',
       icon: '🎁',
+      image: waistBagImg,
       features: [
         'Custom Gift Items',
         'Bulk Orders',
         'Corporate Packages',
         'Seasonal Promotions',
         'Gift Wrapping',
+        'Promotional Merchandise',
       ],
       color: 'from-pink-500 to-red-600',
     },
@@ -100,8 +176,11 @@ const Services = () => {
   const categories = [
     { id: 'all', name: 'All Services' },
     { id: 'branding', name: 'Branding' },
+    { id: 'posm', name: 'POSM & Advertising' },
+    { id: 'uniforms', name: 'Uniforms & Apparel' },
+    { id: 'safety', name: 'Safety & Security' },
     { id: 'procurement', name: 'Procurement' },
-    { id: 'logistics', name: 'Logistics' },
+    { id: 'logistics', name: 'Logistics & Exports' },
     { id: 'printing', name: 'Printing' },
     { id: 'consultancy', name: 'Consultancy' },
     { id: 'gifting', name: 'Gifting' },
@@ -170,14 +249,16 @@ const Services = () => {
               key={service.id}
               className="group bg-white rounded-2xl border-2 border-gray-100 hover:border-[#1E90FF]/30 overflow-hidden hover:shadow-xl transition-all duration-300"
             >
-              {/* Header with gradient */}
-              <div className={`bg-gradient-to-br ${service.color} p-8 text-center relative overflow-hidden`}>
-                <div className="absolute inset-0 bg-black/10"></div>
-                <div className="relative z-10">
-                  <div className="text-6xl mb-3 transform group-hover:scale-110 transition-transform duration-300">
-                    {service.icon}
-                  </div>
-                  <h3 className="text-2xl font-bold text-white">
+              {/* Header with image */}
+              <div className="relative overflow-hidden h-64">
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-center z-10">
+                  <h3 className="text-2xl font-bold text-white drop-shadow-lg">
                     {service.title}
                   </h3>
                 </div>
