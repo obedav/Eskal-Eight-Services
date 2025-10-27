@@ -339,13 +339,6 @@ const Home = () => {
                 {/* Gradient Accent */}
                 <div className={`absolute top-0 left-0 w-1 h-full bg-gradient-to-b ${item.color}`}></div>
 
-                {/* Number Badge */}
-                <div className="mb-6">
-                  <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${item.color} flex items-center justify-center shadow-md`}>
-                    <span className="text-white font-bold text-xl">{String(index + 1).padStart(2, '0')}</span>
-                  </div>
-                </div>
-
                 {/* Content */}
                 <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#1E90FF] transition-colors">
                   {item.title}

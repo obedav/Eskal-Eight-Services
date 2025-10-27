@@ -104,14 +104,7 @@ const About = () => {
               {/* Gradient accent */}
               <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-blue-500 to-blue-600"></div>
 
-              {/* Number badge */}
-              <div className="mb-6">
-                <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center shadow-lg">
-                  <span className="text-white font-bold text-2xl">01</span>
-                </div>
-              </div>
-
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4 mt-4">Our Mission</h3>
               <p className="text-gray-700 leading-relaxed">
                 "To help customers build a reliable, secure, and flexible branding foundation that enables them to achieve their business objectives."
               </p>
@@ -126,14 +119,7 @@ const About = () => {
               {/* Gradient accent */}
               <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-purple-500 to-pink-600"></div>
 
-              {/* Number badge */}
-              <div className="mb-6">
-                <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center shadow-lg">
-                  <span className="text-white font-bold text-2xl">02</span>
-                </div>
-              </div>
-
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4 mt-4">Our Vision</h3>
               <p className="text-gray-700 leading-relaxed">
                 To be Nigeria's leading branding and promotional solutions provider, recognized for quality, innovation, and customer-centric approach.
               </p>
@@ -168,14 +154,7 @@ const About = () => {
               {/* Gradient Accent Bar */}
               <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${value.color}`}></div>
 
-              {/* Number Badge */}
-              <div className="mb-6">
-                <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${value.color} flex items-center justify-center shadow-md`}>
-                  <span className="text-white font-bold text-xl">{String(index + 1).padStart(2, '0')}</span>
-                </div>
-              </div>
-
-              <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#1E90FF] transition-colors">
+              <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#1E90FF] transition-colors mt-4">
                 {value.title}
               </h3>
               <p className="text-gray-600 leading-relaxed">{value.description}</p>
@@ -241,14 +220,7 @@ const About = () => {
                 {/* Gradient accent */}
                 <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${item.color}`}></div>
 
-                {/* Number badge */}
-                <div className="mb-6 flex justify-center">
-                  <div className={`w-16 h-16 rounded-xl bg-gradient-to-br ${item.color} flex items-center justify-center group-hover:scale-110 transition-transform shadow-md`}>
-                    <span className="text-white font-bold text-2xl">{String(index + 1).padStart(2, '0')}</span>
-                  </div>
-                </div>
-
-                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#1E90FF] transition-colors">
+                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#1E90FF] transition-colors mt-4">
                   {item.title}
                 </h3>
                 <p className="text-gray-600 leading-relaxed">{item.desc}</p>

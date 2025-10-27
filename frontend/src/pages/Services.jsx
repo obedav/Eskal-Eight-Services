@@ -253,13 +253,6 @@ const Services = () => {
                 {/* Colored Accent Bar */}
                 <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${service.color}`}></div>
 
-                {/* Service Number Badge */}
-                <div className="absolute top-4 left-4">
-                  <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${service.color} flex items-center justify-center shadow-lg`}>
-                    <span className="text-white font-bold text-lg">{String(service.id).padStart(2, '0')}</span>
-                  </div>
-                </div>
-
                 {/* Title */}
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <h3 className="text-2xl font-bold text-white drop-shadow-lg">
@@ -365,16 +358,7 @@ const Services = () => {
                 {/* Gradient Accent */}
                 <div className={`absolute top-0 left-0 w-full h-1 bg-gradient-to-r ${item.color}`}></div>
 
-                {/* Number Badge */}
-                <div className="mb-4">
-                  <div className={`${item.bg} rounded-xl w-14 h-14 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-sm`}>
-                    <span className={`text-2xl font-bold bg-gradient-to-r ${item.color} bg-clip-text text-transparent`}>
-                      {String(index + 1).padStart(2, '0')}
-                    </span>
-                  </div>
-                </div>
-
-                <h3 className="font-bold text-gray-900 mb-2 text-lg group-hover:text-[#1E90FF] transition-colors">
+                <h3 className="font-bold text-gray-900 mb-2 text-lg group-hover:text-[#1E90FF] transition-colors mt-4">
                   {item.title}
                 </h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
