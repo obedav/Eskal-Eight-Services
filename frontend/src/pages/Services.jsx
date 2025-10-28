@@ -2,16 +2,17 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 // Import service images
-import brandingImg from '../assets/images/services/branding.jpg';
+import brandingImg from '../assets/images/services/image19.jpg';
 import vehicleBrandingImg from '../assets/images/services/vehicle-branding.jpg';
 import designImg from '../assets/images/services/design.jpg';
 import waistBagImg from '../assets/images/services/waist bag.png';
 import flaskBrandingImg from '../assets/images/services/flask-branding.jpg';
-import clothBrandingImg from '../assets/images/services/cloth-branding.jpg';
+import clothBrandingImg from '../assets/images/services/clothing-branding.jpg';
 import posmImg from '../assets/images/services/product-advert.jpg';
 import uniformsImg from '../assets/images/services/polo-shirt.jpg';
 import safetyImg from '../assets/images/services/overall-jacket.jpg';
 import inflatableImg from '../assets/images/services/inflatable/inflatable1.jpeg';
+import mascotImg from '../assets/images/services/mascot/mascot1.jpg';
 
 const Services = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -130,22 +131,24 @@ const Services = () => {
         'Digital & Offset Printing',
       ],
       color: 'from-orange-500 to-red-600',
+      link: '/printing',
     },
     {
       id: 8,
-      title: 'Consultancy',
-      category: 'consultancy',
-      description: 'Expert advisory services for brand development and business growth.',
-      image: clothBrandingImg,
+      title: 'Custom Brand Mascots',
+      category: 'mascots',
+      description: 'Professional mascot costumes that bring your brand to life and create unforgettable experiences.',
+      image: mascotImg,
       features: [
-        'Brand Strategy',
-        'Market Research',
-        'Business Planning',
-        'Brand Positioning',
-        'Stakeholder Management',
-        'Business Development',
+        'Custom Character Design',
+        'Product Mascots',
+        'Event Mascots',
+        'Promotional Characters',
+        'Corporate Mascots',
+        'Premium Materials',
       ],
-      color: 'from-indigo-500 to-purple-600',
+      color: 'from-pink-500 to-purple-600',
+      link: '/mascots',
     },
     {
       id: 9,
@@ -174,7 +177,7 @@ const Services = () => {
     { id: 'procurement', name: 'Procurement' },
     { id: 'inflatables', name: 'Product Inflatables' },
     { id: 'printing', name: 'Printing' },
-    { id: 'consultancy', name: 'Consultancy' },
+    { id: 'mascots', name: 'Brand Mascots' },
     { id: 'gifting', name: 'Gifting' },
   ];
 

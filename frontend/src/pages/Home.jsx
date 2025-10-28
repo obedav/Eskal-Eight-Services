@@ -14,11 +14,11 @@ import ascoLogo from '../assets/images/services/Clients/asco.jpg';
 import nrLogo from '../assets/images/services/Clients/NR.jpg';
 
 // Import service images (different from Services page)
-import brandingHomeImg from '../assets/images/services/image18.jpg';
+import brandingHomeImg from '../assets/images/services/image19.jpg';
 import procurementHomeImg from '../assets/images/services/GOLDEN-PENNY-PAPER-FOOD-PACK_034646.jpg';
 import inflatableHomeImg from '../assets/images/services/inflatable/inflatable1.jpeg';
 import printingHomeImg from '../assets/images/services/design1.jpg';
-import consultancyHomeImg from '../assets/images/services/polo-shirt.jpg';
+import mascotHomeImg from '../assets/images/services/mascot/mascot1.jpg';
 import giftingHomeImg from '../assets/images/services/product-advert.jpg';
 
 const Home = () => {
@@ -62,11 +62,13 @@ const Home = () => {
       title: 'Printing Services',
       description: 'Professional printing and customization',
       image: printingHomeImg,
+      link: '/printing',
     },
     {
-      title: 'Consultancy',
-      description: 'Expert brand and business consulting',
-      image: consultancyHomeImg,
+      title: 'Custom Brand Mascots',
+      description: 'Professional mascot costumes that bring brands to life',
+      image: mascotHomeImg,
+      link: '/mascots',
     },
     {
       title: 'Corporate Gifting',
