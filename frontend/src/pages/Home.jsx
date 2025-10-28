@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import ServiceTreeBranch from '../components/common/ServiceTreeBranch';
 
 // Import client logos
 import fmnLogo from '../assets/images/services/Clients/fmn.png';
@@ -79,6 +80,9 @@ const Home = () => {
 
   return (
     <div className="min-h-screen">
+      {/* Animated Service Tree Branch */}
+      <ServiceTreeBranch />
+
       {/* Hero Section - Stripe/Deel Style with Curved Shape */}
       <section className="hero-gradient text-white overflow-hidden relative pb-20">
         {/* Animated Background Elements */}

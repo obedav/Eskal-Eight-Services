@@ -8,6 +8,7 @@ const Header = () => {
   const navigate = useNavigate();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [userMenuOpen, setUserMenuOpen] = useState(false);
+  const [servicesMenuOpen, setServicesMenuOpen] = useState(false);
 
   const handleLogout = () => {
     logout();
@@ -18,10 +19,21 @@ const Header = () => {
   const navLinks = [
     { path: '/', label: 'Home' },
     { path: '/about', label: 'About' },
-    { path: '/services', label: 'Services' },
     { path: '/portfolio', label: 'Portfolio' },
     { path: '/tech-services', label: 'Tech Services', highlight: true },
     { path: '/contact', label: 'Contact' },
+  ];
+
+  const services = [
+    { path: '/services', label: 'Brand Management', icon: '🎨', color: 'from-purple-500 to-pink-600' },
+    { path: '/services', label: 'POSM & Advertising', icon: '📢', color: 'from-red-500 to-orange-600' },
+    { path: '/services', label: 'Corporate Uniforms', icon: '👔', color: 'from-cyan-500 to-blue-600' },
+    { path: '/services', label: 'Safety Equipment', icon: '🦺', color: 'from-yellow-500 to-orange-600' },
+    { path: '/services', label: 'Procurement', icon: '📦', color: 'from-blue-500 to-blue-600' },
+    { path: '/inflatables', label: 'Product Inflatables', icon: '🎈', color: 'from-purple-500 to-purple-600' },
+    { path: '/printing', label: 'Printing Services', icon: '🖨️', color: 'from-orange-500 to-red-600' },
+    { path: '/mascots', label: 'Brand Mascots', icon: '🎭', color: 'from-pink-500 to-purple-600' },
+    { path: '/services', label: 'Corporate Gifting', icon: '🎁', color: 'from-pink-500 to-red-600' },
   ];
 
   return (
@@ -63,6 +75,59 @@ const Header = () => {
                 )}
               </Link>
             ))}
+
+            {/* Services Dropdown */}
+            <div
+              className="relative"
+              onMouseEnter={() => setServicesMenuOpen(true)}
+              onMouseLeave={() => setServicesMenuOpen(false)}
+            >
+              <button className="text-gray-700 hover:text-[#1E90FF] transition-colors font-medium flex items-center gap-1">
+                Services
+                <svg
+                  className={`w-4 h-4 transition-transform ${servicesMenuOpen ? 'rotate-180' : ''}`}
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+
+              {/* Mega Menu Dropdown */}
+              {servicesMenuOpen && (
+                <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-[600px] bg-white rounded-xl shadow-2xl border border-gray-100 p-6 z-50">
+                  <div className="grid grid-cols-3 gap-4">
+                    {services.map((service) => (
+                      <Link
+                        key={service.label}
+                        to={service.path}
+                        className="group flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 transition-all duration-300"
+                        onClick={() => setServicesMenuOpen(false)}
+                      >
+                        <div className={`text-3xl flex-shrink-0 group-hover:scale-110 transition-transform`}>
+                          {service.icon}
+                        </div>
+                        <div>
+                          <h3 className="font-semibold text-gray-900 group-hover:text-[#1E90FF] text-sm">
+                            {service.label}
+                          </h3>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+                  <div className="mt-4 pt-4 border-t border-gray-200">
+                    <Link
+                      to="/services"
+                      className="block text-center text-[#1E90FF] hover:text-[#0077CC] font-semibold text-sm"
+                      onClick={() => setServicesMenuOpen(false)}
+                    >
+                      View All Services →
+                    </Link>
+                  </div>
+                </div>
+              )}
+            </div>
 
             {/* Auth Section */}
             {isAuthenticated ? (
@@ -188,6 +253,24 @@ const Header = () => {
                 {link.label}
               </Link>
             ))}
+
+            {/* Services Section in Mobile Menu */}
+            <div className="mx-2 mt-4 mb-2">
+              <div className="text-sm font-semibold text-gray-500 px-4 mb-2">SERVICES</div>
+              <div className="grid grid-cols-2 gap-2">
+                {services.map((service) => (
+                  <Link
+                    key={service.label}
+                    to={service.path}
+                    className="flex items-center gap-2 py-2 px-3 text-gray-700 hover:text-[#1E90FF] hover:bg-gray-50 transition-colors rounded-lg text-sm"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    <span className="text-xl">{service.icon}</span>
+                    <span className="font-medium">{service.label}</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
 
             {isAuthenticated ? (
               <>
