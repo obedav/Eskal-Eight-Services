@@ -28,7 +28,7 @@ const Hero3D = React.lazy(() => import('../components/3d/Hero3D'));
 
 const Home = () => {
   const [isVisible, setIsVisible] = useState({});
-  const [is3DView, setIs3DView] = useState(true); // Toggle between 2D and 3D
+  const [is3DView, setIs3DView] = useState(false); // Toggle between 2D and 3D - Default to 2D
 
   useEffect(() => {
     // Trigger animations on scroll
