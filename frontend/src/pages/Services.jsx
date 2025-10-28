@@ -11,7 +11,7 @@ import clothBrandingImg from '../assets/images/services/cloth-branding.jpg';
 import posmImg from '../assets/images/services/product-advert.jpg';
 import uniformsImg from '../assets/images/services/polo-shirt.jpg';
 import safetyImg from '../assets/images/services/overall-jacket.jpg';
-import importsImg from '../assets/images/services/vehicle-branding1.jpg';
+import inflatableImg from '../assets/images/services/inflatable/inflatable1.jpeg';
 
 const Services = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -100,19 +100,20 @@ const Services = () => {
     },
     {
       id: 6,
-      title: 'Logistics, Imports & Exports',
-      category: 'logistics',
-      description: 'Comprehensive logistics, clearing, and international trade services.',
-      image: importsImg,
+      title: 'Product Replica Inflatables',
+      category: 'inflatables',
+      description: 'Custom giant inflatable product replicas perfect for events, promotions, and brand activations.',
+      image: inflatableImg,
       features: [
-        'Local & Interstate Delivery',
-        'Equipment Transport',
-        'Fleet Management',
-        'Warehousing',
-        'Imports & Exports',
-        'Clearing Services',
+        'Custom Product Replicas',
+        'Giant Inflatable Displays',
+        'Event Inflatables',
+        'Brand Mascots',
+        'Promotional Inflatables',
+        'Exhibition Displays',
       ],
-      color: 'from-green-500 to-green-600',
+      color: 'from-purple-500 to-purple-600',
+      link: '/inflatables',
     },
     {
       id: 7,
@@ -171,7 +172,7 @@ const Services = () => {
     { id: 'uniforms', name: 'Uniforms & Apparel' },
     { id: 'safety', name: 'Safety & Security' },
     { id: 'procurement', name: 'Procurement' },
-    { id: 'logistics', name: 'Logistics & Exports' },
+    { id: 'inflatables', name: 'Product Inflatables' },
     { id: 'printing', name: 'Printing' },
     { id: 'consultancy', name: 'Consultancy' },
     { id: 'gifting', name: 'Gifting' },
@@ -199,7 +200,7 @@ const Services = () => {
             </span>
             <h1 className="text-5xl md:text-6xl font-bold mb-6">Our Services</h1>
             <p className="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
-              Comprehensive solutions for branding, procurement, logistics, and
+              Comprehensive solutions for branding, procurement, custom inflatables, and
               business growth. Delivering quality, efficiency & trust.
             </p>
           </div>
@@ -294,10 +295,10 @@ const Services = () => {
 
                 {/* CTA Button */}
                 <Link
-                  to={`/request-quote?service=${service.id}`}
+                  to={service.link || `/request-quote?service=${service.id}`}
                   className="block w-full text-center bg-[#1E90FF] text-white py-3 rounded-xl font-semibold hover:bg-[#0077CC] transition-all duration-300 hover:scale-105 shadow-md hover:shadow-lg"
                 >
-                  Request Quote →
+                  {service.link ? 'Learn More →' : 'Request Quote →'}
                 </Link>
               </div>
             </div>

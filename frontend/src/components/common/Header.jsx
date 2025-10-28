@@ -25,7 +25,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="bg-white shadow-lg border-b border-gray-100">
+    <header className="bg-white shadow-lg border-b border-gray-100 sticky top-12 sm:top-10 md:top-8 z-40 mt-12 sm:mt-10 md:mt-8">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -126,7 +126,7 @@ const Header = () => {
               <div className="flex items-center space-x-4">
                 <Link
                   to="/login"
-                  className="text-gray-700 hover:text-[#1E90FF] transition-colors font-medium"
+                  className="text-gray-700 hover:text-[#1E90FF] transition-colors font-medium py-2"
                 >
                   Login
                 </Link>
@@ -141,16 +141,19 @@ const Header = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="text-gray-700 hover:text-[#1E90FF] transition-colors"
+              className="text-gray-900 hover:text-[#1E90FF] transition-colors p-2 rounded-lg hover:bg-gray-100 active:bg-gray-200"
+              aria-label="Toggle mobile menu"
+              aria-expanded={mobileMenuOpen}
             >
               <svg
-                className="h-6 w-6"
+                className="h-8 w-8"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
+                strokeWidth="2.5"
               >
                 {mobileMenuOpen ? (
                   <path
@@ -174,12 +177,12 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden py-4 border-t border-gray-200">
+          <div className="md:hidden py-4 border-t border-gray-200 bg-white">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
-                className="block py-2 text-gray-700 hover:text-[#1E90FF] transition-colors"
+                className="block py-3 px-4 text-gray-700 hover:text-[#1E90FF] hover:bg-gray-50 transition-colors rounded-lg mx-2 text-lg font-medium"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {link.label}
@@ -190,14 +193,14 @@ const Header = () => {
               <>
                 <Link
                   to={isAdmin() ? '/admin/dashboard' : '/client/dashboard'}
-                  className="block py-2 text-gray-700 hover:text-[#1E90FF] transition-colors"
+                  className="block py-3 px-4 text-gray-700 hover:text-[#1E90FF] hover:bg-gray-50 transition-colors rounded-lg mx-2 text-lg font-medium"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Dashboard
                 </Link>
                 <Link
                   to="/client/profile"
-                  className="block py-2 text-gray-700 hover:text-[#1E90FF] transition-colors"
+                  className="block py-3 px-4 text-gray-700 hover:text-[#1E90FF] hover:bg-gray-50 transition-colors rounded-lg mx-2 text-lg font-medium"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Profile
@@ -207,7 +210,7 @@ const Header = () => {
                     handleLogout();
                     setMobileMenuOpen(false);
                   }}
-                  className="block w-full text-left py-2 text-gray-700 hover:text-[#1E90FF] transition-colors"
+                  className="block w-full text-left py-3 px-4 text-gray-700 hover:text-[#1E90FF] hover:bg-gray-50 transition-colors rounded-lg mx-2 text-lg font-medium"
                 >
                   Logout
                 </button>
@@ -216,14 +219,14 @@ const Header = () => {
               <>
                 <Link
                   to="/login"
-                  className="block py-2 text-gray-700 hover:text-[#1E90FF] transition-colors"
+                  className="block py-3 px-4 text-gray-700 hover:text-[#1E90FF] hover:bg-gray-50 transition-colors rounded-lg mx-2 text-lg font-medium"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Login
                 </Link>
                 <Link
                   to="/register"
-                  className="block py-2 text-gray-700 hover:text-[#1E90FF] transition-colors"
+                  className="block py-3 px-4 mt-2 mx-2 text-center bg-[#1E90FF] text-white hover:bg-[#0077CC] transition-colors rounded-lg text-lg font-medium"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Sign Up

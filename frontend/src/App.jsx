@@ -8,6 +8,7 @@ import { AuthProvider } from './context/AuthContext';
 import { ThemeProvider } from './context/ThemeContext';
 import { NotificationProvider } from './context/NotificationContext';
 import AppRoutes from './routes';
+import FloatingContactButtons from './components/common/FloatingContactButtons';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -27,6 +28,7 @@ function App() {
           <AuthProvider>
             <NotificationProvider>
               <AppRoutes />
+              <FloatingContactButtons />
               <ToastContainer
                 position="top-right"
                 autoClose={3000}

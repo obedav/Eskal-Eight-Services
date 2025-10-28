@@ -17,6 +17,7 @@ import RequestQuote from '../pages/RequestQuote';
 import Contact from '../pages/Contact';
 import Blog from '../pages/Blog';
 import BlogPost from '../pages/BlogPost';
+import Inflatables from '../pages/Inflatables';
 import NotFound from '../pages/NotFound';
 
 // Auth Pages
@@ -66,6 +67,7 @@ const AppRoutes = () => {
         <Route path="/services" element={<Services />} />
         <Route path="/services/:id" element={<ServiceDetail />} />
         <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/inflatables" element={<Inflatables />} />
         <Route path="/tech-services" element={<TechServices />} />
         <Route path="/tech-services/:serviceId" element={<TechServiceDetail />} />
         <Route path="/quote" element={<RequestQuote />} />

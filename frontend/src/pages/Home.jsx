@@ -1,7 +1,5 @@
-import React, { useEffect, useState, Suspense } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import LoadingFallback from '../components/3d/LoadingFallback';
-import ViewToggle from '../components/3d/ViewToggle';
 
 // Import client logos
 import fmnLogo from '../assets/images/services/Clients/fmn.png';
@@ -18,17 +16,13 @@ import nrLogo from '../assets/images/services/Clients/NR.jpg';
 // Import service images (different from Services page)
 import brandingHomeImg from '../assets/images/services/image18.jpg';
 import procurementHomeImg from '../assets/images/services/GOLDEN-PENNY-PAPER-FOOD-PACK_034646.jpg';
-import logisticsHomeImg from '../assets/images/services/motor-branding.jpg';
+import inflatableHomeImg from '../assets/images/services/inflatable/inflatable1.jpeg';
 import printingHomeImg from '../assets/images/services/design1.jpg';
 import consultancyHomeImg from '../assets/images/services/polo-shirt.jpg';
-import giftingHomeImg from '../assets/images/services/product-advert1.jpg';
-
-// Lazy load 3D Hero component for better performance
-const Hero3D = React.lazy(() => import('../components/3d/Hero3D'));
+import giftingHomeImg from '../assets/images/services/product-advert.jpg';
 
 const Home = () => {
   const [isVisible, setIsVisible] = useState({});
-  const [is3DView, setIs3DView] = useState(false); // Toggle between 2D and 3D - Default to 2D
 
   useEffect(() => {
     // Trigger animations on scroll
@@ -59,9 +53,10 @@ const Home = () => {
       image: procurementHomeImg,
     },
     {
-      title: 'Logistics & Haulage',
-      description: 'Efficient transportation services',
-      image: logisticsHomeImg,
+      title: 'Product Replica Inflatables',
+      description: 'Custom giant inflatable product replicas for events',
+      image: inflatableHomeImg,
+      link: '/inflatables',
     },
     {
       title: 'Printing Services',
@@ -82,16 +77,8 @@ const Home = () => {
 
   return (
     <div className="min-h-screen">
-      {/* View Toggle Button */}
-      <ViewToggle is3D={is3DView} onToggle={() => setIs3DView(!is3DView)} />
-
-      {/* Conditional Rendering: 3D or 2D Hero */}
-      {is3DView ? (
-        <Suspense fallback={<LoadingFallback />}>
-          <Hero3D />
-        </Suspense>
-      ) : (
-        <section className="hero-gradient text-white overflow-hidden relative pb-20">
+      {/* Hero Section - Stripe/Deel Style with Curved Shape */}
+      <section className="hero-gradient text-white overflow-hidden relative pb-20">
         {/* Animated Background Elements */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-10 w-72 h-72 bg-blue-500 rounded-full blur-3xl animate-float"></div>
@@ -210,19 +197,19 @@ const Home = () => {
                   </div>
                 </div>
 
-                {/* Card 2 - Logistics Card (Bottom Left) */}
+                {/* Card 2 - Inflatable Card (Bottom Left) */}
                 <div className="absolute bottom-0 left-0 w-64 card-glass p-6 animate-float" style={{animationDelay: '1s'}}>
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-xl flex items-center justify-center text-2xl shadow-lg">
-                      🚚
+                    <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-purple-600 rounded-xl flex items-center justify-center text-2xl shadow-lg">
+                      🎈
                     </div>
                     <div>
-                      <h4 className="font-bold text-gray-900">Logistics</h4>
-                      <p className="text-gray-600 text-xs">Fast Delivery</p>
+                      <h4 className="font-bold text-gray-900">Inflatables</h4>
+                      <p className="text-gray-600 text-xs">Custom Replicas</p>
                     </div>
                   </div>
                   <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
-                    <div className="h-full bg-gradient-to-r from-green-400 to-green-600 rounded-full animate-pulse" style={{width: '75%'}}></div>
+                    <div className="h-full bg-gradient-to-r from-purple-400 to-purple-600 rounded-full animate-pulse" style={{width: '85%'}}></div>
                   </div>
                 </div>
 
@@ -246,7 +233,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-      )}
 
       {/* Services Overview - Clean Grid */}
       <section className="py-24 bg-white" data-animate>
@@ -269,7 +255,7 @@ const Home = () => {
             {services.map((service, index) => (
               <Link
                 key={index}
-                to="/services"
+                to={service.link || "/services"}
                 className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
               >
                 {/* Image Section */}
